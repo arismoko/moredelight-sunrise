@@ -65,3 +65,26 @@ base (`ported_farmersdelight`) commit and version it was validated with.
   their textures (`../run/shots/md-03/md-tab.png`). Knife tooltip lines were not read (the generated attribute
   values are unit-tested; the knives' behaviour is MD-04/MD-09).
 - next: MD-04 (first playable slice).
+
+## MD-04 First playable slice — PASS — 2026-11-16 — **MDM1 closed**
+- base: farmersdelight-horizon 39d0d5e (`3.6.30-horizon.2`) | build pin afe471cf | addon commit: (this commit)
+- single player (fd-port instance, world FDM6, survival, offscreen; pad at 60000,200,60000, forceloaded):
+  - `moredelight:stone_knife` crafted in the inventory grid from cobblestone over a stick (result 131/131);
+  - potato placed on the FD cutting board, cut with the stone knife → 1 `diced_potatoes`, knife damage 1;
+  - bread on the board, cut → 4 `bread_slice`, knife damage 2;
+  - a bread slice in a furnace with coal → `toast` after ~203 game ticks (recipe 200; polling included);
+  - toast + honey bottle in the grid → `toast_with_honey`, the glass bottle stays in the grid;
+  - eating (hunger first): diced potatoes food +2; toast with honey not eaten after 0.6 s, eaten by 0.95 s, +5.
+- persistence: potato left on the board and the knife at damage 2 → save & quit, game restarted → the board still
+  holds and renders the potato, the knife still has damage 2 (screenshot 6).
+- multiplayer (dedicated server `run/fd-server`, re-exported with base 39d0d5e; MD package in the server's and both
+  clients' `horizon-mods/`): server log "content from 2 mod(s)"; Alice and Bob joined; Bob placed a potato on a
+  board and cut it with a stone knife → 1 diced potatoes, his knife damage 1 (screenshot 7). The server pad was
+  removed afterwards.
+- tool notes: a right-click while the crosshair is on a furnace reopens it, so `use-item` failed with "the container
+  screen is open" until the view was turned to the sky; fast `key N` + click sequences need ~1 s pauses or the click
+  uses the previous slot. The rig's windowed clients stalled again (Bob kept a stale position); `run/mp/client.sh`
+  now passes extra arguments (e.g. `--offscreen`); a fresh join fixed the position. The dedicated-server export now
+  goes to `run/server-export-new` (on disk) because /tmp filled up.
+- evidence: `../run/shots/md-04/` (1 craft, 2 board, 3 diced, 4 slices, 5 toast with honey, 6 after restart, 7 Bob).
+- next: MD-05 (skillet/stove/campfire items).
