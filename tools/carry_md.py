@@ -9,7 +9,7 @@ Usage:
 Rules (tools/carry_rules_md.toml.in): R1 copy MD's own namespace and `c` tags byte for byte; R2 exclude
 integrations; R3 MD's FD-namespace knives tag becomes an overlay entry; R4 MD's bacon-sandwich override ships under
 a moredelight id (MA1); R5 MD's craft_knife override is dropped (MA2); R6 every food gets an effect-tooltip overlay
-entry; R7 every tag the output references must be defined by vanilla 26.3, the base or the output. Every source
+entry; R8 every knife gets a `ported_farmersdelight:knife_items` overlay entry (MD-09); R7 every tag the output references must be defined by vanilla 26.3, the base or the output. Every source
 file must match exactly one rule. The overlay goes to tools/overlay/moredelight.json, for the base carry (BX-02).
 The base's carry_lib.py is imported from the --base checkout, which must be at the pinned commit.
 """
@@ -51,6 +51,16 @@ def food_ids(java: str) -> list[str]:
         if line.lstrip().startswith("//"):
             continue
         ids += re.findall(r'\baddon\.food\("([a-z0-9_]+)"\)', line)
+    return [f"moredelight:{i}" for i in ids]
+
+
+def knife_ids(java: str) -> list[str]:
+    """`addon.knife("x", ...)` calls in MoreDelight.java: DelightLib's KnifeBuilder builds `new KnifeItem` (FD's class)."""
+    ids = []
+    for line in java.splitlines():
+        if line.lstrip().startswith("//"):
+            continue
+        ids += re.findall(r'\baddon\.knife\("([a-z0-9_]+)"', line)
     return [f"moredelight:{i}" for i in ids]
 
 
@@ -128,6 +138,11 @@ def carry(md: Path, out: Path, rules: dict, base: Path, vanilla: Path) -> tuple[
     foods = food_ids((md / et["java"]).read_text("utf-8"))
     overlay_entries.append(
         {"tag": et["tag"], "kind": et["kind"], "ids": foods, "source": source_of(rules, md, et["java"])}
+    )
+    ki = rules["knife_items"]
+    knives = knife_ids((md / ki["java"]).read_text("utf-8"))
+    overlay_entries.append(
+        {"tag": ki["tag"], "kind": ki["kind"], "ids": knives, "source": source_of(rules, md, ki["java"])}
     )
     overlay = {
         "addon": "moredelight",

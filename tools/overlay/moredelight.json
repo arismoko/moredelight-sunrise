@@ -58,6 +58,20 @@
         "file": "src/main/java/com/axperty/moredelight/MoreDelight.java",
         "sha256": "1c0d22df96424d7b806850a141b1f2c6aec66d8ffedb3b97c0fe93de6cda84ce"
       }
+    },
+    {
+      "tag": "ported_farmersdelight:knife_items",
+      "kind": "item",
+      "ids": [
+        "moredelight:wooden_knife",
+        "moredelight:stone_knife"
+      ],
+      "source": {
+        "repo": "https://github.com/axperty/moredelight",
+        "commit": "360e61172756e8b22d4d647753321002c7452d35",
+        "file": "src/main/java/com/axperty/moredelight/MoreDelight.java",
+        "sha256": "1c0d22df96424d7b806850a141b1f2c6aec66d8ffedb3b97c0fe93de6cda84ce"
+      }
     }
   ]
 }

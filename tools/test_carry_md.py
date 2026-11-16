@@ -32,6 +32,7 @@ JAVA = """
         addon.food("diced_potatoes")
         // addon.food("hamburger_with_cheese")
         addon.knife("wooden_knife", ToolMaterial.WOOD)
+        // addon.knife("bone_knife", ToolMaterial.WOOD)
         addon.food("toast").fast()
 """
 
@@ -79,6 +80,7 @@ class CarryMdTest(unittest.TestCase):
             [
                 ("farmersdelight:tools/knives", ["moredelight:stone_knife"]),
                 ("ported_farmersdelight:effect_tooltip", ["moredelight:diced_potatoes", "moredelight:toast"]),
+                ("ported_farmersdelight:knife_items", ["moredelight:wooden_knife"]),
             ],
         )
         self.assertTrue(any("MA2" in line for line in log))

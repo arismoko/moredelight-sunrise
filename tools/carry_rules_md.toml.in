@@ -10,7 +10,7 @@ roots = ["src/main/generated", "src/main/resources"]
 
 # The base checkout the carry imports carry_lib.py from and checks tags against (ported_farmersdelight).
 [base]
-sha = "39d0d5ec58bbadea21324e63c3f7c7b24fc33f7e"
+sha = "356d9eff643a638a39b13e720f0aecd483432a29"
 
 # R1: copied byte for byte.
 [copy]
@@ -52,4 +52,11 @@ kind = "item"
 [effect_tooltip]
 java = "src/main/java/com/axperty/moredelight/MoreDelight.java"
 tag = "ported_farmersdelight:effect_tooltip"
+kind = "item"
+
+# R8 (MD-09): every DelightLib knife(...) is an FD KnifeItem (`instanceof KnifeItem`: pumpkin carving, knockback);
+# the base attaches its Knife part to this base-owned tag.
+[knife_items]
+java = "src/main/java/com/axperty/moredelight/MoreDelight.java"
+tag = "ported_farmersdelight:knife_items"
 kind = "item"

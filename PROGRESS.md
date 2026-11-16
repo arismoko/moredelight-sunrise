@@ -176,3 +176,20 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - side finding (user report during this task): creative tab names overlap on page 2 → base E-39 (engine).
 - deltas: none new.
 - next: MD-09 (knife parity via the base overlay).
+
+## MD-09 Knife parity (base overlay) — PASS — 2026-11-16
+- base: farmersdelight-horizon (MD-09 base commit after 356d9ef; package `3.6.30-horizon.2`) | addon commit: (this commit)
+- carry R8: every `addon.knife(...)` gets a `ported_farmersdelight:knife_items` overlay entry (DelightLib knives are FD
+  KnifeItems); base pin moved to 356d9ef; test_carry_md 3 OK; carry --check 225 files.
+- in game (fd-port, FDM6, survival, row at z 59993 / kill area x 59994 z 59991; screenshots `../run/shots/md-09/`):
+  stone knife: pumpkin → carved pumpkin facing the clicked side, 4 seeds, knife −1; cake → bites 1 + cake slice;
+  apple pie → bites 1 + pie slice; red candle cake → cake[bites=1] + red candle + slice; 30 short grass → 10 straw
+  (Q1 30%); mature rice panicles → `rice` + straw (control with bread: `rice_panicle`); 7 pig kills → 3 ham
+  (knife scavenging, 50%; log `scavenge.log`); Backstabbing applied, Sweeping Edge refused ("cannot support that
+  enchantment"), Sharpness applied; wooden knife at 58 damage carved once more and broke (59 uses).
+- not checked: chicken feather (`ctl hunt` could not hit the chickens; same attacker-knife condition as the ham row,
+  which passed); knife knockback −0.1 for MD knives (code path is the tag now; not measured).
+- incident: the first kill loop summoned pigs inside the MD-06 stove row (z 59996); the user noticed; mobs removed, loop moved.
+- test world restored: creative, Peaceful, random_tick_speed 3; game quit.
+- deltas: none new.
+- next: BX-03 (base), then MD-10.
