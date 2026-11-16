@@ -193,3 +193,17 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - test world restored: creative, Peaceful, random_tick_speed 3; game quit.
 - deltas: none new.
 - next: BX-03 (base), then MD-10.
+
+## MD-10 Food-effect tooltips — PASS — 2026-11-16
+- base: farmersdelight-horizon b59cca8 (BX-03; package `3.6.30-horizon.2` unchanged) | addon commit: (this commit; no file change)
+- MD's 31 foods reach the base tooltip through the overlay's `ported_farmersdelight:effect_tooltip` entries (R6),
+  which the base now reads (BX-03).
+- in game (fd-port, FDM6, chest at 59994,200,59992, F3+H on): the 8 MD foods with consume effects show their line
+  right under the name — carrot soup, cooked rice with beef/porkchop/chicken cuts, creamy pasta with ham/chicken cuts
+  "Nourishment (03:00)"; potato salad, chicken salad "Regeneration (00:05)" (`../run/shots/bx-03/montage1.png`,
+  `montage3.png`). The other 23 (omelette, toast, mashed potatoes, loaded hamburger in `bx-03/montage2.png`; the 19
+  others in `../run/shots/md-10/montage{1,2,3}.png`) show name + advanced lines only. `enableFoodEffectTooltip=false`
+  hides MD's lines (`bx-03/off-montage.png`).
+- count: MD has 8 effect foods / 23 without (MoreDelight.java `withEffect` ×8); the plan's "7 / 24" was a miscount.
+- deltas: none.
+- next: MD-11 (advancements, lang, creative tab audit).
