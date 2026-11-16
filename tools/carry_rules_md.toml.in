@@ -1,0 +1,55 @@
+# (Named *.toml.in: the Horizon packager refuses .toml files outside src/.)
+# Rules for tools/carry_md.py (ADDONS_PLAN §5.4, MD-02). Change these and re-run; never hand-edit carried files.
+
+[source]
+repo = "https://github.com/axperty/moredelight"
+branch = "26.3-fabric"
+sha = "360e61172756e8b22d4d647753321002c7452d35"
+# Generated tree first, then hand-written; a path both have is an error.
+roots = ["src/main/generated", "src/main/resources"]
+
+# The base checkout the carry imports carry_lib.py from and checks tags against (ported_farmersdelight).
+[base]
+sha = "39d0d5ec58bbadea21324e63c3f7c7b24fc33f7e"
+
+# R1: copied byte for byte.
+[copy]
+include_prefixes = ["assets/moredelight/", "data/moredelight/", "data/c/tags/"]
+
+# R2: not carried (integrations with other mods, loader metadata). Every source file must match exactly one rule.
+[exclude]
+patterns = [
+  "data/casualness_delight/*",
+  "data/create/*",
+  "data/expandeddelight/*",
+  "data/nutritious-feast/*",
+  "data/supplementaries/*",
+  "fabric.mod.json",
+]
+
+# The mod list icon: MD's logo (400×400 PNG) also as the package's icon.png.
+[[copy_as]]
+from = "assets/moredelight/logo.png"
+to = "icon.png"
+
+# R4 (MA1): MD replaces FD's bacon sandwich recipe; the namespace fence forbids that, so it ships under its own id.
+[[relocate]]
+from = "data/farmersdelight/recipe/bacon_sandwich.json"
+to = "data/moredelight/recipe/bacon_sandwich_from_bread_slices.json"
+
+# R5 (MA2): MD's override of FD's craft_knife advancement cannot ship (fence) and is dropped.
+[[drop]]
+path = "data/farmersdelight/advancement/main/craft_knife.json"
+delta = "MA2"
+
+# R3: MD's FD-namespace tag becomes an overlay entry for the base carry (BX-02).
+[[overlay_tag]]
+path = "data/farmersdelight/tags/item/tools/knives.json"
+tag = "farmersdelight:tools/knives"
+kind = "item"
+
+# R6: every DelightLib food(...) is an FD ConsumableItem with the effect tooltip on (BX-03).
+[effect_tooltip]
+java = "src/main/java/com/axperty/moredelight/MoreDelight.java"
+tag = "ported_farmersdelight:effect_tooltip"
+kind = "item"

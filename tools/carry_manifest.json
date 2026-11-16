@@ -1,0 +1,1589 @@
+{
+ "md_repo": "https://github.com/axperty/moredelight",
+ "md_sha": "360e61172756e8b22d4d647753321002c7452d35",
+ "base_sha": "39d0d5ec58bbadea21324e63c3f7c7b24fc33f7e",
+ "rules_sha256": "5e6ed40fc80d5ca5b3a30b15da379da73b3b48a80c2fa29f46cf2df48b0e6666",
+ "overlay_sha256": "7db67bccedf9c0f9f46f83b4befe94fae99e6d9b835bf1e3d43afcd8d0fd9172",
+ "log": [
+  "dropped data/farmersdelight/advancement/main/craft_knife.json (MA2)",
+  "relocated data/farmersdelight/recipe/bacon_sandwich.json -> data/moredelight/recipe/bacon_sandwich_from_bread_slices.json (MA1)",
+  "overlay data/farmersdelight/tags/item/tools/knives.json -> farmersdelight:tools/knives (2 ids)"
+ ],
+ "files": [
+  {
+   "source": "src/main/generated/assets/moredelight/items/bread_slice.json",
+   "dest": "assets/moredelight/items/bread_slice.json",
+   "sha256_source": "0be09307fd8c17fb80bf89eb078179e271583d5442541ba849bc875557fb1939",
+   "sha256_dest": "0be09307fd8c17fb80bf89eb078179e271583d5442541ba849bc875557fb1939",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/carrot_soup.json",
+   "dest": "assets/moredelight/items/carrot_soup.json",
+   "sha256_source": "ea17247b79a08638bf3bf8e58ed13af7a3165bb7eb0f4be5f30b4ac08865d796",
+   "sha256_dest": "ea17247b79a08638bf3bf8e58ed13af7a3165bb7eb0f4be5f30b4ac08865d796",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/chicken_salad.json",
+   "dest": "assets/moredelight/items/chicken_salad.json",
+   "sha256_source": "c87b94e5eec880ee4146d155fbf41b9fab56c17f6a9453bcc016a7b40a7562fa",
+   "sha256_dest": "c87b94e5eec880ee4146d155fbf41b9fab56c17f6a9453bcc016a7b40a7562fa",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/chicken_sandwich_with_egg_and_tomato.json",
+   "dest": "assets/moredelight/items/chicken_sandwich_with_egg_and_tomato.json",
+   "sha256_source": "ec52a9265c7dab9ac15475885511447d707c0215fdfb8bf36620fb79f2fcaa32",
+   "sha256_dest": "ec52a9265c7dab9ac15475885511447d707c0215fdfb8bf36620fb79f2fcaa32",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/chocolate_popsicle.json",
+   "dest": "assets/moredelight/items/chocolate_popsicle.json",
+   "sha256_source": "d5881f9151c92027fed15df1f8285651355efbe0b3495ecabf04d5ebca2328de",
+   "sha256_dest": "d5881f9151c92027fed15df1f8285651355efbe0b3495ecabf04d5ebca2328de",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/cooked_rice_with_beef.json",
+   "dest": "assets/moredelight/items/cooked_rice_with_beef.json",
+   "sha256_source": "50c4c2d7e60294459a28f5cdb2bc097b3f1789a76dae25858fe759a496f0d9cb",
+   "sha256_dest": "50c4c2d7e60294459a28f5cdb2bc097b3f1789a76dae25858fe759a496f0d9cb",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/cooked_rice_with_chicken_cuts.json",
+   "dest": "assets/moredelight/items/cooked_rice_with_chicken_cuts.json",
+   "sha256_source": "fdd6b563f5e25fbd8ef074b33558d36956a8d4895778f88e5b78f1f405fb618e",
+   "sha256_dest": "fdd6b563f5e25fbd8ef074b33558d36956a8d4895778f88e5b78f1f405fb618e",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/cooked_rice_with_porkchop.json",
+   "dest": "assets/moredelight/items/cooked_rice_with_porkchop.json",
+   "sha256_source": "67acf2a7c339f73bc0a216763fc4f0e57d74d2f6ab685178b7eadd2fee92f3d9",
+   "sha256_dest": "67acf2a7c339f73bc0a216763fc4f0e57d74d2f6ab685178b7eadd2fee92f3d9",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/creamy_pasta_with_chicken_cuts.json",
+   "dest": "assets/moredelight/items/creamy_pasta_with_chicken_cuts.json",
+   "sha256_source": "49760bd6618fa5abba305cdd509ad81ae8d508bf8a070fdfeb2f7b3638d30ad6",
+   "sha256_dest": "49760bd6618fa5abba305cdd509ad81ae8d508bf8a070fdfeb2f7b3638d30ad6",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/creamy_pasta_with_ham.json",
+   "dest": "assets/moredelight/items/creamy_pasta_with_ham.json",
+   "sha256_source": "d626633301d67687d2ff2ad4f09576918a9c2565b42d1a05ea461e1475a40c4c",
+   "sha256_dest": "d626633301d67687d2ff2ad4f09576918a9c2565b42d1a05ea461e1475a40c4c",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/diced_potatoes.json",
+   "dest": "assets/moredelight/items/diced_potatoes.json",
+   "sha256_source": "cdcd5a29808d9b686ae0e19da5b45f7801141e24b8201591551694dc9971c29f",
+   "sha256_dest": "cdcd5a29808d9b686ae0e19da5b45f7801141e24b8201591551694dc9971c29f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/diced_potatoes_with_beef.json",
+   "dest": "assets/moredelight/items/diced_potatoes_with_beef.json",
+   "sha256_source": "e2b337c2f40fe3c3f15d6071d5f111b013d7565e3324e0885b1bde4b981cf101",
+   "sha256_dest": "e2b337c2f40fe3c3f15d6071d5f111b013d7565e3324e0885b1bde4b981cf101",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/diced_potatoes_with_chicken_cuts.json",
+   "dest": "assets/moredelight/items/diced_potatoes_with_chicken_cuts.json",
+   "sha256_source": "7d49b9cf09e89fb53c69316edebe42c2bfbbaf33a3f903901e0a463c51eb2a1c",
+   "sha256_dest": "7d49b9cf09e89fb53c69316edebe42c2bfbbaf33a3f903901e0a463c51eb2a1c",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/diced_potatoes_with_egg_and_tomato.json",
+   "dest": "assets/moredelight/items/diced_potatoes_with_egg_and_tomato.json",
+   "sha256_source": "283e5d8ed89d705d1bd1336c6313b14e32d9f7426862b04753a29fb633a3a437",
+   "sha256_dest": "283e5d8ed89d705d1bd1336c6313b14e32d9f7426862b04753a29fb633a3a437",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/diced_potatoes_with_porkchop.json",
+   "dest": "assets/moredelight/items/diced_potatoes_with_porkchop.json",
+   "sha256_source": "eab50ff932c78bdffc1e53ac3c7adc08f8046dd49399ba1e863dfcc7f4b310d2",
+   "sha256_dest": "eab50ff932c78bdffc1e53ac3c7adc08f8046dd49399ba1e863dfcc7f4b310d2",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/egg_with_bacon_sandwich.json",
+   "dest": "assets/moredelight/items/egg_with_bacon_sandwich.json",
+   "sha256_source": "70640fd374818fc7de49c5f41a38d5eabfb72dafe2a4bef8ce3e2378e0517911",
+   "sha256_dest": "70640fd374818fc7de49c5f41a38d5eabfb72dafe2a4bef8ce3e2378e0517911",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/hamburger_with_egg.json",
+   "dest": "assets/moredelight/items/hamburger_with_egg.json",
+   "sha256_source": "f7785c655405e560d37e082e4df3f4688671120b1e7706b989840fa608b10e85",
+   "sha256_dest": "f7785c655405e560d37e082e4df3f4688671120b1e7706b989840fa608b10e85",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/loaded_hamburger.json",
+   "dest": "assets/moredelight/items/loaded_hamburger.json",
+   "sha256_source": "16768aed4b442958e1cc439cd93da310bc0f049f563f8468855659e1d2d4ebd1",
+   "sha256_dest": "16768aed4b442958e1cc439cd93da310bc0f049f563f8468855659e1d2d4ebd1",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/mashed_potatoes.json",
+   "dest": "assets/moredelight/items/mashed_potatoes.json",
+   "sha256_source": "a07066b6e5fe2df3b3c19e02eac93ab735c10eff81b07b871b1b86516c4557e5",
+   "sha256_dest": "a07066b6e5fe2df3b3c19e02eac93ab735c10eff81b07b871b1b86516c4557e5",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/omelette.json",
+   "dest": "assets/moredelight/items/omelette.json",
+   "sha256_source": "46341a80211e14d29a4f3b127587eb25da278fec712feb628f921a4aa428744c",
+   "sha256_dest": "46341a80211e14d29a4f3b127587eb25da278fec712feb628f921a4aa428744c",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/porkchop_sandwich.json",
+   "dest": "assets/moredelight/items/porkchop_sandwich.json",
+   "sha256_source": "10bf3db6d3c38f18b0adec2e046e0631686d340ad0d7af309437b1876c67193a",
+   "sha256_dest": "10bf3db6d3c38f18b0adec2e046e0631686d340ad0d7af309437b1876c67193a",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/potato_salad.json",
+   "dest": "assets/moredelight/items/potato_salad.json",
+   "sha256_source": "73af8deb5c4278ffc791dc527feb523202c84d197aa7c1e74eb8fa1e2d39839b",
+   "sha256_dest": "73af8deb5c4278ffc791dc527feb523202c84d197aa7c1e74eb8fa1e2d39839b",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/simple_hamburger.json",
+   "dest": "assets/moredelight/items/simple_hamburger.json",
+   "sha256_source": "2239b46d7158a75a60814782e4c3e0047ce9c5bc9a41cfe93fd91d894863f4de",
+   "sha256_dest": "2239b46d7158a75a60814782e4c3e0047ce9c5bc9a41cfe93fd91d894863f4de",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/steak_sandwich.json",
+   "dest": "assets/moredelight/items/steak_sandwich.json",
+   "sha256_source": "2347029be2d554f8f53d0e8c047b906ab97e79823f7f5b14ab0aa9a2ea07bc7f",
+   "sha256_dest": "2347029be2d554f8f53d0e8c047b906ab97e79823f7f5b14ab0aa9a2ea07bc7f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/stone_knife.json",
+   "dest": "assets/moredelight/items/stone_knife.json",
+   "sha256_source": "b6e3705ec6ea46b1e4ae47f6c21077fad8f58f16553429970bfb632d1dfbca76",
+   "sha256_dest": "b6e3705ec6ea46b1e4ae47f6c21077fad8f58f16553429970bfb632d1dfbca76",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/toast.json",
+   "dest": "assets/moredelight/items/toast.json",
+   "sha256_source": "4fe53a9ea9bebdf89a43700d1a0d375a208b85344ceb364860115da2216309b2",
+   "sha256_dest": "4fe53a9ea9bebdf89a43700d1a0d375a208b85344ceb364860115da2216309b2",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/toast_with_chocolate.json",
+   "dest": "assets/moredelight/items/toast_with_chocolate.json",
+   "sha256_source": "f1f853b69f6eb2d715e3ab7699b39e7d82be4a51bde3926645cd0c4a750f18f6",
+   "sha256_dest": "f1f853b69f6eb2d715e3ab7699b39e7d82be4a51bde3926645cd0c4a750f18f6",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/toast_with_egg.json",
+   "dest": "assets/moredelight/items/toast_with_egg.json",
+   "sha256_source": "5e3b896316322382742df13eb9b524679d197ffd41f834c49afd9e9c49ca174d",
+   "sha256_dest": "5e3b896316322382742df13eb9b524679d197ffd41f834c49afd9e9c49ca174d",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/toast_with_glow_berries.json",
+   "dest": "assets/moredelight/items/toast_with_glow_berries.json",
+   "sha256_source": "a75de7681d48a8694b687bea16d5855d74211ef3cc8ba1b8d3a01dca46310f70",
+   "sha256_dest": "a75de7681d48a8694b687bea16d5855d74211ef3cc8ba1b8d3a01dca46310f70",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/toast_with_honey.json",
+   "dest": "assets/moredelight/items/toast_with_honey.json",
+   "sha256_source": "8fd31aa4f4b8f5c9ea2479adaca15e61faaf8b117f6641d2a12fd955844ab421",
+   "sha256_dest": "8fd31aa4f4b8f5c9ea2479adaca15e61faaf8b117f6641d2a12fd955844ab421",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/toast_with_sweet_berries.json",
+   "dest": "assets/moredelight/items/toast_with_sweet_berries.json",
+   "sha256_source": "578ff89b7bc4f01e88e9d0b93cabae2829443fe60643d35054a9df6d9fcf9907",
+   "sha256_dest": "578ff89b7bc4f01e88e9d0b93cabae2829443fe60643d35054a9df6d9fcf9907",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/tomato_sandwich.json",
+   "dest": "assets/moredelight/items/tomato_sandwich.json",
+   "sha256_source": "81d24572986e50c3771b35b1caa60e1afccca2a21585d825e95cebc0f09b549f",
+   "sha256_dest": "81d24572986e50c3771b35b1caa60e1afccca2a21585d825e95cebc0f09b549f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/items/wooden_knife.json",
+   "dest": "assets/moredelight/items/wooden_knife.json",
+   "sha256_source": "624ca581d322b2d12c08ed49ac5acb576cc897db7ec403683c49f1dda327bf58",
+   "sha256_dest": "624ca581d322b2d12c08ed49ac5acb576cc897db7ec403683c49f1dda327bf58",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/cs_cz.json",
+   "dest": "assets/moredelight/lang/cs_cz.json",
+   "sha256_source": "1a0ed2fbb25901d7c4e0f1d3a409d05c113d75d2c7658e868613181f6ec88d63",
+   "sha256_dest": "1a0ed2fbb25901d7c4e0f1d3a409d05c113d75d2c7658e868613181f6ec88d63",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/de_de.json",
+   "dest": "assets/moredelight/lang/de_de.json",
+   "sha256_source": "d84f198b7d5012ca8da453274b010fdbeae2750ee15b2f19fdd8d3ddc993b315",
+   "sha256_dest": "d84f198b7d5012ca8da453274b010fdbeae2750ee15b2f19fdd8d3ddc993b315",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/en_au.json",
+   "dest": "assets/moredelight/lang/en_au.json",
+   "sha256_source": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "sha256_dest": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/en_ca.json",
+   "dest": "assets/moredelight/lang/en_ca.json",
+   "sha256_source": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "sha256_dest": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/en_gb.json",
+   "dest": "assets/moredelight/lang/en_gb.json",
+   "sha256_source": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "sha256_dest": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/en_nz.json",
+   "dest": "assets/moredelight/lang/en_nz.json",
+   "sha256_source": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "sha256_dest": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/en_us.json",
+   "dest": "assets/moredelight/lang/en_us.json",
+   "sha256_source": "237754743fe53a510bb68b97b8c4e75068818bef24fcd1217338c812b2d25eeb",
+   "sha256_dest": "237754743fe53a510bb68b97b8c4e75068818bef24fcd1217338c812b2d25eeb",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/en_za.json",
+   "dest": "assets/moredelight/lang/en_za.json",
+   "sha256_source": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "sha256_dest": "b7c39af677d3aa63f5ad215e4829d2f8e00bd7eed2605db77841e3ba0ddc29db",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/eo_uy.json",
+   "dest": "assets/moredelight/lang/eo_uy.json",
+   "sha256_source": "effc59e5bbc6f90fdd23b16530b508118374675c17315d2323ca283339339793",
+   "sha256_dest": "effc59e5bbc6f90fdd23b16530b508118374675c17315d2323ca283339339793",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/es_ar.json",
+   "dest": "assets/moredelight/lang/es_ar.json",
+   "sha256_source": "2195924fa5bdc84c8103aa8aafec3a2f05ab8ff50bb9c181247ad02feb36c418",
+   "sha256_dest": "2195924fa5bdc84c8103aa8aafec3a2f05ab8ff50bb9c181247ad02feb36c418",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/es_cl.json",
+   "dest": "assets/moredelight/lang/es_cl.json",
+   "sha256_source": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "sha256_dest": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/es_ec.json",
+   "dest": "assets/moredelight/lang/es_ec.json",
+   "sha256_source": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "sha256_dest": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/es_es.json",
+   "dest": "assets/moredelight/lang/es_es.json",
+   "sha256_source": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "sha256_dest": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/es_mx.json",
+   "dest": "assets/moredelight/lang/es_mx.json",
+   "sha256_source": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "sha256_dest": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/es_uy.json",
+   "dest": "assets/moredelight/lang/es_uy.json",
+   "sha256_source": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "sha256_dest": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/es_ve.json",
+   "dest": "assets/moredelight/lang/es_ve.json",
+   "sha256_source": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "sha256_dest": "ead15821bd4e8456ed8874de1af52ad0275aedc45c2626f11a53e81065910545",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/fr_ca.json",
+   "dest": "assets/moredelight/lang/fr_ca.json",
+   "sha256_source": "1b271296a48346e08ac057bc2ed85c67e5c36486c468b108942ece361f0760de",
+   "sha256_dest": "1b271296a48346e08ac057bc2ed85c67e5c36486c468b108942ece361f0760de",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/fr_fr.json",
+   "dest": "assets/moredelight/lang/fr_fr.json",
+   "sha256_source": "1b271296a48346e08ac057bc2ed85c67e5c36486c468b108942ece361f0760de",
+   "sha256_dest": "1b271296a48346e08ac057bc2ed85c67e5c36486c468b108942ece361f0760de",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/it_it.json",
+   "dest": "assets/moredelight/lang/it_it.json",
+   "sha256_source": "d1a581a36c96375cb6eb88dcf7a0e8aa892f95b04a80b472aedf07d337a48308",
+   "sha256_dest": "d1a581a36c96375cb6eb88dcf7a0e8aa892f95b04a80b472aedf07d337a48308",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/ja_jp.json",
+   "dest": "assets/moredelight/lang/ja_jp.json",
+   "sha256_source": "e1418747edc481aa0f4b092f6b5c7a9d70908f099b7c481947251e26cab8b9ec",
+   "sha256_dest": "e1418747edc481aa0f4b092f6b5c7a9d70908f099b7c481947251e26cab8b9ec",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/kk_kz.json",
+   "dest": "assets/moredelight/lang/kk_kz.json",
+   "sha256_source": "6f24c6aee017f92b4bc840b52505fc64d9f278da5d5215b6fb97d414682f6ea6",
+   "sha256_dest": "6f24c6aee017f92b4bc840b52505fc64d9f278da5d5215b6fb97d414682f6ea6",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/ko_kr.json",
+   "dest": "assets/moredelight/lang/ko_kr.json",
+   "sha256_source": "023fce37626b0636408c08834b99a94891508af589ced3ddb890990703cc82dd",
+   "sha256_dest": "023fce37626b0636408c08834b99a94891508af589ced3ddb890990703cc82dd",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/nl_nl.json",
+   "dest": "assets/moredelight/lang/nl_nl.json",
+   "sha256_source": "575fda024ceb776e04d93fcf2532cbd22c7cba12e08f9a27337b0d2ed56abb19",
+   "sha256_dest": "575fda024ceb776e04d93fcf2532cbd22c7cba12e08f9a27337b0d2ed56abb19",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/no_no.json",
+   "dest": "assets/moredelight/lang/no_no.json",
+   "sha256_source": "68d4896a3b4b6afc92733e3ae01d9d281f0ec77837d709bb382f138945193200",
+   "sha256_dest": "68d4896a3b4b6afc92733e3ae01d9d281f0ec77837d709bb382f138945193200",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/pl_pl.json",
+   "dest": "assets/moredelight/lang/pl_pl.json",
+   "sha256_source": "c43d406ad7ff703735f5ac4d8b775ece7718815a1bb6bb43d6d2978742aa3c43",
+   "sha256_dest": "c43d406ad7ff703735f5ac4d8b775ece7718815a1bb6bb43d6d2978742aa3c43",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/pt_br.json",
+   "dest": "assets/moredelight/lang/pt_br.json",
+   "sha256_source": "0cc910780546a4a2bde718ae2826112b08580d12323a8f9c6f29c55b47005508",
+   "sha256_dest": "0cc910780546a4a2bde718ae2826112b08580d12323a8f9c6f29c55b47005508",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/pt_pt.json",
+   "dest": "assets/moredelight/lang/pt_pt.json",
+   "sha256_source": "0cc910780546a4a2bde718ae2826112b08580d12323a8f9c6f29c55b47005508",
+   "sha256_dest": "0cc910780546a4a2bde718ae2826112b08580d12323a8f9c6f29c55b47005508",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/ru_ru.json",
+   "dest": "assets/moredelight/lang/ru_ru.json",
+   "sha256_source": "bfccd96448fc64ff9249b6c19801cd6147889281582c2db97ee4506c36c25bad",
+   "sha256_dest": "bfccd96448fc64ff9249b6c19801cd6147889281582c2db97ee4506c36c25bad",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/sv_se.json",
+   "dest": "assets/moredelight/lang/sv_se.json",
+   "sha256_source": "8fb8c2aa70c804bc072d82895fbbfece85ba31bd6ac48fab514bf96d464fdae1",
+   "sha256_dest": "8fb8c2aa70c804bc072d82895fbbfece85ba31bd6ac48fab514bf96d464fdae1",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/tr_tr.json",
+   "dest": "assets/moredelight/lang/tr_tr.json",
+   "sha256_source": "223ca4a27d6a30b87a9fcf1e5c793eebfdfca6d111204a8fa6c704e7506428a4",
+   "sha256_dest": "223ca4a27d6a30b87a9fcf1e5c793eebfdfca6d111204a8fa6c704e7506428a4",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/uk_ua.json",
+   "dest": "assets/moredelight/lang/uk_ua.json",
+   "sha256_source": "7bef2a2a7142f5035a6167957042e561cd94a68afd981cae331f9a7fb0764238",
+   "sha256_dest": "7bef2a2a7142f5035a6167957042e561cd94a68afd981cae331f9a7fb0764238",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/zh_cn.json",
+   "dest": "assets/moredelight/lang/zh_cn.json",
+   "sha256_source": "0b2b2e6b0e899cc3595ce36082e3b288c7ed5651608d9076ec88b9904875053d",
+   "sha256_dest": "0b2b2e6b0e899cc3595ce36082e3b288c7ed5651608d9076ec88b9904875053d",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/zh_hk.json",
+   "dest": "assets/moredelight/lang/zh_hk.json",
+   "sha256_source": "452a04630bce0f93a32ce2707945f33dde8155ca7ecbdc1918e0eb55a200efff",
+   "sha256_dest": "452a04630bce0f93a32ce2707945f33dde8155ca7ecbdc1918e0eb55a200efff",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/lang/zh_tw.json",
+   "dest": "assets/moredelight/lang/zh_tw.json",
+   "sha256_source": "90fe4162379a38d7dd573a34cd8f2eaf6c4efaafaf636104e226310fac1aa305",
+   "sha256_dest": "90fe4162379a38d7dd573a34cd8f2eaf6c4efaafaf636104e226310fac1aa305",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/logo.png",
+   "dest": "assets/moredelight/logo.png",
+   "sha256_source": "a041332f075b7b6c9b090477d45a83a18665d690b0e3ec2605bb5f945b01489a",
+   "sha256_dest": "a041332f075b7b6c9b090477d45a83a18665d690b0e3ec2605bb5f945b01489a",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/bread_slice.json",
+   "dest": "assets/moredelight/models/item/bread_slice.json",
+   "sha256_source": "e80c7704e746e37ef1c30d09b81b3f18ed56a7c5a59ac3d5c8e6281cbccdde60",
+   "sha256_dest": "e80c7704e746e37ef1c30d09b81b3f18ed56a7c5a59ac3d5c8e6281cbccdde60",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/carrot_soup.json",
+   "dest": "assets/moredelight/models/item/carrot_soup.json",
+   "sha256_source": "c2128d30dee272c09a221f67a261ca17dfb9e907e5407b7cbb559eb43f99a3cc",
+   "sha256_dest": "c2128d30dee272c09a221f67a261ca17dfb9e907e5407b7cbb559eb43f99a3cc",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/chicken_salad.json",
+   "dest": "assets/moredelight/models/item/chicken_salad.json",
+   "sha256_source": "bfcc537c17cb3292f0ae0be83ad7b93f22212bcb88ed28f1df9736c1df77a1ed",
+   "sha256_dest": "bfcc537c17cb3292f0ae0be83ad7b93f22212bcb88ed28f1df9736c1df77a1ed",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/chicken_sandwich_with_egg_and_tomato.json",
+   "dest": "assets/moredelight/models/item/chicken_sandwich_with_egg_and_tomato.json",
+   "sha256_source": "f8880ee72d0d02f0b68c53c0f32be6e547145344546527c96254ade4ef4dbe3f",
+   "sha256_dest": "f8880ee72d0d02f0b68c53c0f32be6e547145344546527c96254ade4ef4dbe3f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/chocolate_popsicle.json",
+   "dest": "assets/moredelight/models/item/chocolate_popsicle.json",
+   "sha256_source": "9402bf36bce67fb5335c18072208625414aa099e1f9201653390e61fa0aef6d3",
+   "sha256_dest": "9402bf36bce67fb5335c18072208625414aa099e1f9201653390e61fa0aef6d3",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/cooked_rice_with_beef.json",
+   "dest": "assets/moredelight/models/item/cooked_rice_with_beef.json",
+   "sha256_source": "b3d6540cf36e89ba84a2bb595d979a62b5f5f40f935629681d5916ae159bcc15",
+   "sha256_dest": "b3d6540cf36e89ba84a2bb595d979a62b5f5f40f935629681d5916ae159bcc15",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/cooked_rice_with_chicken_cuts.json",
+   "dest": "assets/moredelight/models/item/cooked_rice_with_chicken_cuts.json",
+   "sha256_source": "3bad99851bbfae65f8b83cd5f62321e5db8b97e5d1daa38ce4869bd688aac0a8",
+   "sha256_dest": "3bad99851bbfae65f8b83cd5f62321e5db8b97e5d1daa38ce4869bd688aac0a8",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/cooked_rice_with_porkchop.json",
+   "dest": "assets/moredelight/models/item/cooked_rice_with_porkchop.json",
+   "sha256_source": "eb96a79eb454a3c46e6b6fe9dccf4dbf6b6f30602ce7bd1f91f647941917644e",
+   "sha256_dest": "eb96a79eb454a3c46e6b6fe9dccf4dbf6b6f30602ce7bd1f91f647941917644e",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/creamy_pasta_with_chicken_cuts.json",
+   "dest": "assets/moredelight/models/item/creamy_pasta_with_chicken_cuts.json",
+   "sha256_source": "f9eb79f86bb2b846a9e4f961000c84465b3b7211dec917a123bd4bd0f2095c5f",
+   "sha256_dest": "f9eb79f86bb2b846a9e4f961000c84465b3b7211dec917a123bd4bd0f2095c5f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/creamy_pasta_with_ham.json",
+   "dest": "assets/moredelight/models/item/creamy_pasta_with_ham.json",
+   "sha256_source": "6b12d1d49447306b6942d18db4795baca3c107305ccf04bfccd55a18da750f02",
+   "sha256_dest": "6b12d1d49447306b6942d18db4795baca3c107305ccf04bfccd55a18da750f02",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/diced_potatoes.json",
+   "dest": "assets/moredelight/models/item/diced_potatoes.json",
+   "sha256_source": "ea13fc26d2df037a1d11b1004680b563e1e75edbcdc7ee39ea000cca68ab9375",
+   "sha256_dest": "ea13fc26d2df037a1d11b1004680b563e1e75edbcdc7ee39ea000cca68ab9375",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/diced_potatoes_with_beef.json",
+   "dest": "assets/moredelight/models/item/diced_potatoes_with_beef.json",
+   "sha256_source": "a5a20942281af1c89b193317a7ce3b516fe9da25ccc7989850625a45e3cb1926",
+   "sha256_dest": "a5a20942281af1c89b193317a7ce3b516fe9da25ccc7989850625a45e3cb1926",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/diced_potatoes_with_chicken_cuts.json",
+   "dest": "assets/moredelight/models/item/diced_potatoes_with_chicken_cuts.json",
+   "sha256_source": "cfb751a7999eb25bf64183c48f979b9ed3d92932c919613269000d0b670679c6",
+   "sha256_dest": "cfb751a7999eb25bf64183c48f979b9ed3d92932c919613269000d0b670679c6",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/diced_potatoes_with_egg_and_tomato.json",
+   "dest": "assets/moredelight/models/item/diced_potatoes_with_egg_and_tomato.json",
+   "sha256_source": "846c7256dff60abc71f8740441b9463f491bfb4b734c0132d31fcc0509bdb231",
+   "sha256_dest": "846c7256dff60abc71f8740441b9463f491bfb4b734c0132d31fcc0509bdb231",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/diced_potatoes_with_porkchop.json",
+   "dest": "assets/moredelight/models/item/diced_potatoes_with_porkchop.json",
+   "sha256_source": "ae23192f950deb6af6219eb251e9a23cd76b9c9b136239bc043ef0316ffff274",
+   "sha256_dest": "ae23192f950deb6af6219eb251e9a23cd76b9c9b136239bc043ef0316ffff274",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/egg_with_bacon_sandwich.json",
+   "dest": "assets/moredelight/models/item/egg_with_bacon_sandwich.json",
+   "sha256_source": "7fda3cd3801c66544de0d0ae0eff7223959ad0e16e9d4b7ed49a7096bee6b10b",
+   "sha256_dest": "7fda3cd3801c66544de0d0ae0eff7223959ad0e16e9d4b7ed49a7096bee6b10b",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/hamburger_with_egg.json",
+   "dest": "assets/moredelight/models/item/hamburger_with_egg.json",
+   "sha256_source": "1f1301a04101465fae2db0f9208442fd188c8b04f8ec962fe883348c7ac7ad63",
+   "sha256_dest": "1f1301a04101465fae2db0f9208442fd188c8b04f8ec962fe883348c7ac7ad63",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/loaded_hamburger.json",
+   "dest": "assets/moredelight/models/item/loaded_hamburger.json",
+   "sha256_source": "d4aea4e7de427a6e87d8d85a1acafcc3fae36821a948ded0f87f38b7343d7154",
+   "sha256_dest": "d4aea4e7de427a6e87d8d85a1acafcc3fae36821a948ded0f87f38b7343d7154",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/mashed_potatoes.json",
+   "dest": "assets/moredelight/models/item/mashed_potatoes.json",
+   "sha256_source": "0c512ff8228f5b9647ada670e8ae71210b2491008a3de6ebc84a5cd4a3500ab4",
+   "sha256_dest": "0c512ff8228f5b9647ada670e8ae71210b2491008a3de6ebc84a5cd4a3500ab4",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/omelette.json",
+   "dest": "assets/moredelight/models/item/omelette.json",
+   "sha256_source": "6aadfa2ecd5934dcb4632b15678ff8856e3e635fcbed26aca0a5ed7b1c351b1c",
+   "sha256_dest": "6aadfa2ecd5934dcb4632b15678ff8856e3e635fcbed26aca0a5ed7b1c351b1c",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/porkchop_sandwich.json",
+   "dest": "assets/moredelight/models/item/porkchop_sandwich.json",
+   "sha256_source": "dd5fbced9ea14ef013b335cb9d02bd18bb329d9998f2153ac9056f9287b89097",
+   "sha256_dest": "dd5fbced9ea14ef013b335cb9d02bd18bb329d9998f2153ac9056f9287b89097",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/potato_salad.json",
+   "dest": "assets/moredelight/models/item/potato_salad.json",
+   "sha256_source": "92c0c8300e481706cd537bb1628402a986b1fd3a55c7e2de7bddaa233fa47d19",
+   "sha256_dest": "92c0c8300e481706cd537bb1628402a986b1fd3a55c7e2de7bddaa233fa47d19",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/simple_hamburger.json",
+   "dest": "assets/moredelight/models/item/simple_hamburger.json",
+   "sha256_source": "79c2fd8a40b4b62b0dceb97e1616cba93f110f6b6b686d34f0d58a8454f0c998",
+   "sha256_dest": "79c2fd8a40b4b62b0dceb97e1616cba93f110f6b6b686d34f0d58a8454f0c998",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/steak_sandwich.json",
+   "dest": "assets/moredelight/models/item/steak_sandwich.json",
+   "sha256_source": "f93903e8ff7b0947a96a7679d83bc1100f0274943ced2c59afa63850f4bdcb07",
+   "sha256_dest": "f93903e8ff7b0947a96a7679d83bc1100f0274943ced2c59afa63850f4bdcb07",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/stone_knife.json",
+   "dest": "assets/moredelight/models/item/stone_knife.json",
+   "sha256_source": "5294688067c60134af85c58507a3d184f9c5cbe2e1154ac9182b40586c9beded",
+   "sha256_dest": "5294688067c60134af85c58507a3d184f9c5cbe2e1154ac9182b40586c9beded",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/toast.json",
+   "dest": "assets/moredelight/models/item/toast.json",
+   "sha256_source": "79286a1b4564e0fd77a821e50a753e23550d93ca33a4430ea4a9e882152e54b8",
+   "sha256_dest": "79286a1b4564e0fd77a821e50a753e23550d93ca33a4430ea4a9e882152e54b8",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/toast_with_chocolate.json",
+   "dest": "assets/moredelight/models/item/toast_with_chocolate.json",
+   "sha256_source": "ed17bd30c0a68e60a6c04c69d0c1f0a9c4a6d9f79aa416f1a1f6e1487b2a2504",
+   "sha256_dest": "ed17bd30c0a68e60a6c04c69d0c1f0a9c4a6d9f79aa416f1a1f6e1487b2a2504",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/toast_with_egg.json",
+   "dest": "assets/moredelight/models/item/toast_with_egg.json",
+   "sha256_source": "7fe9c67ca08467e866068a9aec28ec10348d811484a810179a37569a759908ca",
+   "sha256_dest": "7fe9c67ca08467e866068a9aec28ec10348d811484a810179a37569a759908ca",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/toast_with_glow_berries.json",
+   "dest": "assets/moredelight/models/item/toast_with_glow_berries.json",
+   "sha256_source": "4946259340b38906fc752c7c099fcd7bd95805e8023ec89548b4ad3fb869b2f9",
+   "sha256_dest": "4946259340b38906fc752c7c099fcd7bd95805e8023ec89548b4ad3fb869b2f9",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/toast_with_honey.json",
+   "dest": "assets/moredelight/models/item/toast_with_honey.json",
+   "sha256_source": "ad47e421f0f2d0dda9dc78a12a0f669a57a228d706d755f2f8505a32847b8205",
+   "sha256_dest": "ad47e421f0f2d0dda9dc78a12a0f669a57a228d706d755f2f8505a32847b8205",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/toast_with_sweet_berries.json",
+   "dest": "assets/moredelight/models/item/toast_with_sweet_berries.json",
+   "sha256_source": "c13f032c866c8744b94e99185c23cdf9e25af3a29e4fca4d170b8e8f0a1bf405",
+   "sha256_dest": "c13f032c866c8744b94e99185c23cdf9e25af3a29e4fca4d170b8e8f0a1bf405",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/tomato_sandwich.json",
+   "dest": "assets/moredelight/models/item/tomato_sandwich.json",
+   "sha256_source": "5208cf6785d20c5c3648d2879312eab9781a52926f0b9e52e5dba0db01724cc6",
+   "sha256_dest": "5208cf6785d20c5c3648d2879312eab9781a52926f0b9e52e5dba0db01724cc6",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/assets/moredelight/models/item/wooden_knife.json",
+   "dest": "assets/moredelight/models/item/wooden_knife.json",
+   "sha256_source": "d2778ed66fa67be1bc65713ad16ddbebd09870ba80fd276fd8e97e425654ac4d",
+   "sha256_dest": "d2778ed66fa67be1bc65713ad16ddbebd09870ba80fd276fd8e97e425654ac4d",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/bread_slice.png",
+   "dest": "assets/moredelight/textures/item/bread_slice.png",
+   "sha256_source": "54df885964eecd130567998b03c7baa41d57ebe803305929b9ac500ddf418d6b",
+   "sha256_dest": "54df885964eecd130567998b03c7baa41d57ebe803305929b9ac500ddf418d6b",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/carrot_soup.png",
+   "dest": "assets/moredelight/textures/item/carrot_soup.png",
+   "sha256_source": "17224e44c48457ae190d0d2b330d41632bd0ddaf8719ece0592e1adf95fbe4d1",
+   "sha256_dest": "17224e44c48457ae190d0d2b330d41632bd0ddaf8719ece0592e1adf95fbe4d1",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/chicken_salad.png",
+   "dest": "assets/moredelight/textures/item/chicken_salad.png",
+   "sha256_source": "bd51709dc75807cb53bcca9ac0aeb4c1a7b2339d362d1a8a375e27e8c42a4ff9",
+   "sha256_dest": "bd51709dc75807cb53bcca9ac0aeb4c1a7b2339d362d1a8a375e27e8c42a4ff9",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/chicken_sandwich_with_egg_and_tomato.png",
+   "dest": "assets/moredelight/textures/item/chicken_sandwich_with_egg_and_tomato.png",
+   "sha256_source": "4c05cd69a85fc0f39b09fab4709a16b887283e1b600ddcfbe881b1c1b3fec82d",
+   "sha256_dest": "4c05cd69a85fc0f39b09fab4709a16b887283e1b600ddcfbe881b1c1b3fec82d",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/chocolate_popsicle.png",
+   "dest": "assets/moredelight/textures/item/chocolate_popsicle.png",
+   "sha256_source": "ef67ff511a92eed1305b75c724c90ff9f84f0aa2f147cd2cff4fd88a1dd659c9",
+   "sha256_dest": "ef67ff511a92eed1305b75c724c90ff9f84f0aa2f147cd2cff4fd88a1dd659c9",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/cooked_rice_with_beef.png",
+   "dest": "assets/moredelight/textures/item/cooked_rice_with_beef.png",
+   "sha256_source": "7c1822a3dbd0aa232155c625b22e633307b043659150c6b8fbb4e9b476a330c3",
+   "sha256_dest": "7c1822a3dbd0aa232155c625b22e633307b043659150c6b8fbb4e9b476a330c3",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/cooked_rice_with_chicken_cuts.png",
+   "dest": "assets/moredelight/textures/item/cooked_rice_with_chicken_cuts.png",
+   "sha256_source": "618f1d4028058ec4c2326c305353f1d671f1b3ef9f0cc0c37e518ff3493da402",
+   "sha256_dest": "618f1d4028058ec4c2326c305353f1d671f1b3ef9f0cc0c37e518ff3493da402",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/cooked_rice_with_porkchop.png",
+   "dest": "assets/moredelight/textures/item/cooked_rice_with_porkchop.png",
+   "sha256_source": "200d9af9fae81c2615a8e0252552d85ee4ddcc3df58c007b8a154c14f0f96b36",
+   "sha256_dest": "200d9af9fae81c2615a8e0252552d85ee4ddcc3df58c007b8a154c14f0f96b36",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/creamy_pasta_with_chicken_cuts.png",
+   "dest": "assets/moredelight/textures/item/creamy_pasta_with_chicken_cuts.png",
+   "sha256_source": "a4b7136d533541bc87b78775556c255d39800e8098c7c32b76d539da1733ae5f",
+   "sha256_dest": "a4b7136d533541bc87b78775556c255d39800e8098c7c32b76d539da1733ae5f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/creamy_pasta_with_ham.png",
+   "dest": "assets/moredelight/textures/item/creamy_pasta_with_ham.png",
+   "sha256_source": "82a3c5b5480ffcee7f936e37c625ac7b000b975a4093b20121df27437400b884",
+   "sha256_dest": "82a3c5b5480ffcee7f936e37c625ac7b000b975a4093b20121df27437400b884",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/diced_potatoes.png",
+   "dest": "assets/moredelight/textures/item/diced_potatoes.png",
+   "sha256_source": "7a7724ed8561962cfaae07e373e320f3e23046b58f45c4ec7585caadbad674b5",
+   "sha256_dest": "7a7724ed8561962cfaae07e373e320f3e23046b58f45c4ec7585caadbad674b5",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/diced_potatoes_with_beef.png",
+   "dest": "assets/moredelight/textures/item/diced_potatoes_with_beef.png",
+   "sha256_source": "1a616ee0dc981a800d5f053fe45aedffa5b19651e321f22c493039b5e332b17e",
+   "sha256_dest": "1a616ee0dc981a800d5f053fe45aedffa5b19651e321f22c493039b5e332b17e",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/diced_potatoes_with_chicken_cuts.png",
+   "dest": "assets/moredelight/textures/item/diced_potatoes_with_chicken_cuts.png",
+   "sha256_source": "3ffcae4405777f9b536ae29fdca7396288dc81ccff98b455bcfea2a9b450ee18",
+   "sha256_dest": "3ffcae4405777f9b536ae29fdca7396288dc81ccff98b455bcfea2a9b450ee18",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/diced_potatoes_with_egg_and_tomato.png",
+   "dest": "assets/moredelight/textures/item/diced_potatoes_with_egg_and_tomato.png",
+   "sha256_source": "2a40df1ffbea4c8597c52396985bd3e6cecb6f6159a47326eb40a10b43f5c2cd",
+   "sha256_dest": "2a40df1ffbea4c8597c52396985bd3e6cecb6f6159a47326eb40a10b43f5c2cd",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/diced_potatoes_with_porkchop.png",
+   "dest": "assets/moredelight/textures/item/diced_potatoes_with_porkchop.png",
+   "sha256_source": "c33251f174201255d484ba86affd2d351c6f857e3db90703ecbd6e7348b88760",
+   "sha256_dest": "c33251f174201255d484ba86affd2d351c6f857e3db90703ecbd6e7348b88760",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/egg_with_bacon_sandwich.png",
+   "dest": "assets/moredelight/textures/item/egg_with_bacon_sandwich.png",
+   "sha256_source": "e7795ba34a35cd364ff07d3ac5584da40debaed20556b28d3a8cc9706b2c9379",
+   "sha256_dest": "e7795ba34a35cd364ff07d3ac5584da40debaed20556b28d3a8cc9706b2c9379",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/hamburger_with_cheese.png",
+   "dest": "assets/moredelight/textures/item/hamburger_with_cheese.png",
+   "sha256_source": "cd8e5971a310809ae8fb3fedc5159f2b9f5c78d60f2ba871238f8906597b1660",
+   "sha256_dest": "cd8e5971a310809ae8fb3fedc5159f2b9f5c78d60f2ba871238f8906597b1660",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/hamburger_with_egg.png",
+   "dest": "assets/moredelight/textures/item/hamburger_with_egg.png",
+   "sha256_source": "caaeb4c926485d2b7d9eca5ca281c19ebb6343e8ce8dd0e0f8d202ad87f26325",
+   "sha256_dest": "caaeb4c926485d2b7d9eca5ca281c19ebb6343e8ce8dd0e0f8d202ad87f26325",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/hamburger_with_egg_and_cabbage.png",
+   "dest": "assets/moredelight/textures/item/hamburger_with_egg_and_cabbage.png",
+   "sha256_source": "865a2923f88be8bc71d148af1cbc507b6453dc62fdfeb5802c25e165e386b5fb",
+   "sha256_dest": "865a2923f88be8bc71d148af1cbc507b6453dc62fdfeb5802c25e165e386b5fb",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/loaded_hamburger.png",
+   "dest": "assets/moredelight/textures/item/loaded_hamburger.png",
+   "sha256_source": "d11b5bf2c51bbcc334d44bbe85baf8a40c9735629cef3c49daabb752443cb5d1",
+   "sha256_dest": "d11b5bf2c51bbcc334d44bbe85baf8a40c9735629cef3c49daabb752443cb5d1",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/mashed_potatoes.png",
+   "dest": "assets/moredelight/textures/item/mashed_potatoes.png",
+   "sha256_source": "e4af949ed763bc7395df3c7eaf3f552f209cff8b3380effbb2ad28ac38b5e907",
+   "sha256_dest": "e4af949ed763bc7395df3c7eaf3f552f209cff8b3380effbb2ad28ac38b5e907",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/omelette.png",
+   "dest": "assets/moredelight/textures/item/omelette.png",
+   "sha256_source": "319d20d4ebc980687f5694d84993d2583059ffe3424e021c6dbee10fb069150b",
+   "sha256_dest": "319d20d4ebc980687f5694d84993d2583059ffe3424e021c6dbee10fb069150b",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/porkchop_sandwich.png",
+   "dest": "assets/moredelight/textures/item/porkchop_sandwich.png",
+   "sha256_source": "6ce67258579b9884318acd991f3c1f1c842932455cbe45f6b254c0ee025d2f18",
+   "sha256_dest": "6ce67258579b9884318acd991f3c1f1c842932455cbe45f6b254c0ee025d2f18",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/potato_salad.png",
+   "dest": "assets/moredelight/textures/item/potato_salad.png",
+   "sha256_source": "8cf88cddf8006a0144206d1f438209bf552dc34d0937169087e7d36234f0778d",
+   "sha256_dest": "8cf88cddf8006a0144206d1f438209bf552dc34d0937169087e7d36234f0778d",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/simple_hamburger.png",
+   "dest": "assets/moredelight/textures/item/simple_hamburger.png",
+   "sha256_source": "d151b1f2a2f48d0b063b99cc734e893d6f4a5917ae4c188b20ccaf085e1a8bf7",
+   "sha256_dest": "d151b1f2a2f48d0b063b99cc734e893d6f4a5917ae4c188b20ccaf085e1a8bf7",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/steak_and_egg_sandwich.png",
+   "dest": "assets/moredelight/textures/item/steak_and_egg_sandwich.png",
+   "sha256_source": "5a16930396264510c0663f41402dc1eb8389b147d3b0d7d730af0ae84b5af4f0",
+   "sha256_dest": "5a16930396264510c0663f41402dc1eb8389b147d3b0d7d730af0ae84b5af4f0",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/steak_sandwich.png",
+   "dest": "assets/moredelight/textures/item/steak_sandwich.png",
+   "sha256_source": "637894c38a17202e41a42181045a883ad2367ab9116b5cf60636504230a98fc7",
+   "sha256_dest": "637894c38a17202e41a42181045a883ad2367ab9116b5cf60636504230a98fc7",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/stone_knife.png",
+   "dest": "assets/moredelight/textures/item/stone_knife.png",
+   "sha256_source": "18f5c3e23e9c4fd371edd2bb6adb1378eb3299e84933111507cba87f3ba77a1e",
+   "sha256_dest": "18f5c3e23e9c4fd371edd2bb6adb1378eb3299e84933111507cba87f3ba77a1e",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast.png",
+   "dest": "assets/moredelight/textures/item/toast.png",
+   "sha256_source": "c61823851f48276c0eddc069893af949a9ae658e6929af941eb324c80d1ba5c2",
+   "sha256_dest": "c61823851f48276c0eddc069893af949a9ae658e6929af941eb324c80d1ba5c2",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast_with_apple_jam.png",
+   "dest": "assets/moredelight/textures/item/toast_with_apple_jam.png",
+   "sha256_source": "678a3f1e34f80549919d587bd789469bf23ad2b0e2bcb0d4d626275e3840e004",
+   "sha256_dest": "678a3f1e34f80549919d587bd789469bf23ad2b0e2bcb0d4d626275e3840e004",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast_with_blueberries.png",
+   "dest": "assets/moredelight/textures/item/toast_with_blueberries.png",
+   "sha256_source": "aff8f1adfc6a2972298680a9b398af1c340ec8c8f9862453d341b9622107508f",
+   "sha256_dest": "aff8f1adfc6a2972298680a9b398af1c340ec8c8f9862453d341b9622107508f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast_with_cheese.png",
+   "dest": "assets/moredelight/textures/item/toast_with_cheese.png",
+   "sha256_source": "73ea5be4e07e3e5a67f6b3d1d90e920fc88a528a208f4d03e58a23e0ebc93870",
+   "sha256_dest": "73ea5be4e07e3e5a67f6b3d1d90e920fc88a528a208f4d03e58a23e0ebc93870",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast_with_chocolate.png",
+   "dest": "assets/moredelight/textures/item/toast_with_chocolate.png",
+   "sha256_source": "343c89a29e367b8c687c6a166c021515547b83096cee20b9d4d9ed63c0c6c4f2",
+   "sha256_dest": "343c89a29e367b8c687c6a166c021515547b83096cee20b9d4d9ed63c0c6c4f2",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast_with_egg.png",
+   "dest": "assets/moredelight/textures/item/toast_with_egg.png",
+   "sha256_source": "a59eacf55e4806f8e1bffbd252f9c756c70c240075c25c6e983babfb0ee47578",
+   "sha256_dest": "a59eacf55e4806f8e1bffbd252f9c756c70c240075c25c6e983babfb0ee47578",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast_with_glow_berries.png",
+   "dest": "assets/moredelight/textures/item/toast_with_glow_berries.png",
+   "sha256_source": "bc8ab5e4bcf64f3f03ffbe6e53cb36568020af426bbc33e67b6c4def672fd378",
+   "sha256_dest": "bc8ab5e4bcf64f3f03ffbe6e53cb36568020af426bbc33e67b6c4def672fd378",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast_with_honey.png",
+   "dest": "assets/moredelight/textures/item/toast_with_honey.png",
+   "sha256_source": "3d391029d39928a59cb598d2f5e2fb55b861d609097d1eb35bcd3f5afbf2794d",
+   "sha256_dest": "3d391029d39928a59cb598d2f5e2fb55b861d609097d1eb35bcd3f5afbf2794d",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast_with_peanut_butter.png",
+   "dest": "assets/moredelight/textures/item/toast_with_peanut_butter.png",
+   "sha256_source": "8b98312aec5e90cb9ab464d9ea7f1c6b490d08e4ae028427cb1c22e3f178ce45",
+   "sha256_dest": "8b98312aec5e90cb9ab464d9ea7f1c6b490d08e4ae028427cb1c22e3f178ce45",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/toast_with_sweet_berries.png",
+   "dest": "assets/moredelight/textures/item/toast_with_sweet_berries.png",
+   "sha256_source": "f7f11e0132d5250c375e7a0898664e6fcb0f8d3c24d81f848d587fa4f4120a44",
+   "sha256_dest": "f7f11e0132d5250c375e7a0898664e6fcb0f8d3c24d81f848d587fa4f4120a44",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/tomato_sandwich.png",
+   "dest": "assets/moredelight/textures/item/tomato_sandwich.png",
+   "sha256_source": "ec6c24cfaf8e75b5be46a52b08070ddfcd791d59cb10ac411a52bda197bdb8aa",
+   "sha256_dest": "ec6c24cfaf8e75b5be46a52b08070ddfcd791d59cb10ac411a52bda197bdb8aa",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/ultimate_hamburger.png",
+   "dest": "assets/moredelight/textures/item/ultimate_hamburger.png",
+   "sha256_source": "7c8ce18ef78dd6e8e7c0b2d40778a16c7f8f80840fbaa8cf0bb4c9fa8e9747cc",
+   "sha256_dest": "7c8ce18ef78dd6e8e7c0b2d40778a16c7f8f80840fbaa8cf0bb4c9fa8e9747cc",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/textures/item/wooden_knife.png",
+   "dest": "assets/moredelight/textures/item/wooden_knife.png",
+   "sha256_source": "e9a1058b3a9a19d5056d0229b4c6727075623f28205ac52877d6766a670ccc0f",
+   "sha256_dest": "e9a1058b3a9a19d5056d0229b4c6727075623f28205ac52877d6766a670ccc0f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/c/tags/item/bread_slices.json",
+   "dest": "data/c/tags/item/bread_slices.json",
+   "sha256_source": "8d2d03cc61d170c29dea407461ab7fd4502f6cbb08c2a66c7118d805d8a3685a",
+   "sha256_dest": "8d2d03cc61d170c29dea407461ab7fd4502f6cbb08c2a66c7118d805d8a3685a",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/c/tags/item/sliced_potato.json",
+   "dest": "data/c/tags/item/sliced_potato.json",
+   "sha256_source": "0b8bd40c9738eb4facf5153bbd6399ebcc66ed034c9fef13cac294947df00882",
+   "sha256_dest": "0b8bd40c9738eb4facf5153bbd6399ebcc66ed034c9fef13cac294947df00882",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/c/tags/item/tools/knife.json",
+   "dest": "data/c/tags/item/tools/knife.json",
+   "sha256_source": "8c19aa1d882ff1ed10b9eb2e8e378fa34a52f71b5dac1bd9e5c8dda9559ebd12",
+   "sha256_dest": "8c19aa1d882ff1ed10b9eb2e8e378fa34a52f71b5dac1bd9e5c8dda9559ebd12",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/combat/stone_knife.json",
+   "dest": "data/moredelight/advancement/combat/stone_knife.json",
+   "sha256_source": "e8ce6acef46efd30253b2d76223da14fe600dc2012ff395a70688cb7f94ed531",
+   "sha256_dest": "e8ce6acef46efd30253b2d76223da14fe600dc2012ff395a70688cb7f94ed531",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/combat/wooden_knife.json",
+   "dest": "data/moredelight/advancement/combat/wooden_knife.json",
+   "sha256_source": "84838cf57088004aa57deada4064d95f94e4e3833c9a0b3f27c4ca875ee4ad78",
+   "sha256_dest": "84838cf57088004aa57deada4064d95f94e4e3833c9a0b3f27c4ca875ee4ad78",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/main/get_chicken_sandwich_with_egg_and_tomato.json",
+   "dest": "data/moredelight/advancement/main/get_chicken_sandwich_with_egg_and_tomato.json",
+   "sha256_source": "84b8223a3c938d0248f8bb2df6fcaa0a7849ee3a777377d60dd2afa7188a9ea5",
+   "sha256_dest": "84b8223a3c938d0248f8bb2df6fcaa0a7849ee3a777377d60dd2afa7188a9ea5",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/main/get_cooked_rice_with.json",
+   "dest": "data/moredelight/advancement/main/get_cooked_rice_with.json",
+   "sha256_source": "ae213128c9d3403caa625896a443d29f22397bf73b7cc8363db7a350b4211a94",
+   "sha256_dest": "ae213128c9d3403caa625896a443d29f22397bf73b7cc8363db7a350b4211a94",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/main/get_creamy_pasta_with_ham.json",
+   "dest": "data/moredelight/advancement/main/get_creamy_pasta_with_ham.json",
+   "sha256_source": "92c90919cb91f692bbd56c76c31b1a3d9a80b08453348fa529b7f214a6c7c9dd",
+   "sha256_dest": "92c90919cb91f692bbd56c76c31b1a3d9a80b08453348fa529b7f214a6c7c9dd",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/main/get_diced_potatoes_with.json",
+   "dest": "data/moredelight/advancement/main/get_diced_potatoes_with.json",
+   "sha256_source": "d1981a9cf281623d5bad3b07480b7acbbfe60f3c980346657abddc540d238a31",
+   "sha256_dest": "d1981a9cf281623d5bad3b07480b7acbbfe60f3c980346657abddc540d238a31",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/main/get_egg_with_bacon_sandwich.json",
+   "dest": "data/moredelight/advancement/main/get_egg_with_bacon_sandwich.json",
+   "sha256_source": "2837a4672ee34f8ed00eb2251ca93c9f201b6c2d84c92d6eb7d7ca9c0a8f54cf",
+   "sha256_dest": "2837a4672ee34f8ed00eb2251ca93c9f201b6c2d84c92d6eb7d7ca9c0a8f54cf",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/main/get_mashed_potatoes.json",
+   "dest": "data/moredelight/advancement/main/get_mashed_potatoes.json",
+   "sha256_source": "50d6153ea2bc6b693d875d66e9a338b99cfd338a90edfa29420974e4a57a63c2",
+   "sha256_dest": "50d6153ea2bc6b693d875d66e9a338b99cfd338a90edfa29420974e4a57a63c2",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/main/get_omelette.json",
+   "dest": "data/moredelight/advancement/main/get_omelette.json",
+   "sha256_source": "9e6cea10faffb0ce832acaab47194271dadfcf1858569aff724189097f4b4d84",
+   "sha256_dest": "9e6cea10faffb0ce832acaab47194271dadfcf1858569aff724189097f4b4d84",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/main/get_toast_with_egg.json",
+   "dest": "data/moredelight/advancement/main/get_toast_with_egg.json",
+   "sha256_source": "f8cdc818f022e79c6c58483006da81a643fcb8a62a06e87abed1de0584e25012",
+   "sha256_dest": "f8cdc818f022e79c6c58483006da81a643fcb8a62a06e87abed1de0584e25012",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/main/root.json",
+   "dest": "data/moredelight/advancement/main/root.json",
+   "sha256_source": "30b40bef77489e0f0639b1ff6eebb0c3bb4589250bcb1839b49b7360597a5576",
+   "sha256_dest": "30b40bef77489e0f0639b1ff6eebb0c3bb4589250bcb1839b49b7360597a5576",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/carrot_soup.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/carrot_soup.json",
+   "sha256_source": "ced4ef570538d2d7e1428caa33188ee3ed887a3d18d22bb1f5b02e02a31e8586",
+   "sha256_dest": "ced4ef570538d2d7e1428caa33188ee3ed887a3d18d22bb1f5b02e02a31e8586",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/cooked_rice_with_beef.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/cooked_rice_with_beef.json",
+   "sha256_source": "5c82750658306ca6bcb993e1c1aa5988faf130029594913d922dd94e9fbe3e5a",
+   "sha256_dest": "5c82750658306ca6bcb993e1c1aa5988faf130029594913d922dd94e9fbe3e5a",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/cooked_rice_with_chicken_cuts.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/cooked_rice_with_chicken_cuts.json",
+   "sha256_source": "8f2c97ea41df366dc0e5153ead5551d6b3f1d884e8bf4db5600e8497f5122569",
+   "sha256_dest": "8f2c97ea41df366dc0e5153ead5551d6b3f1d884e8bf4db5600e8497f5122569",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/cooked_rice_with_porkchop.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/cooked_rice_with_porkchop.json",
+   "sha256_source": "19cd97e63db6838191fbde3e8ebbc42946bca77360335f85936e5e760e8c1c7e",
+   "sha256_dest": "19cd97e63db6838191fbde3e8ebbc42946bca77360335f85936e5e760e8c1c7e",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/creamy_pasta_with_chicken_cuts.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/creamy_pasta_with_chicken_cuts.json",
+   "sha256_source": "c4a70f93010c28900cb9ca89aa8cfa37e8b8d664818b948a4c66985e1d70f0ea",
+   "sha256_dest": "c4a70f93010c28900cb9ca89aa8cfa37e8b8d664818b948a4c66985e1d70f0ea",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/creamy_pasta_with_ham.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/creamy_pasta_with_ham.json",
+   "sha256_source": "a6bed617a651b2f10e4a827fb956829453b8de2384f8062c0bef93ab2168270e",
+   "sha256_dest": "a6bed617a651b2f10e4a827fb956829453b8de2384f8062c0bef93ab2168270e",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/diced_potatoes_with_beef.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/diced_potatoes_with_beef.json",
+   "sha256_source": "8bc02e3e06f8fee6be9f05779450e75a134efa845969fded88a3ead86c7151f5",
+   "sha256_dest": "8bc02e3e06f8fee6be9f05779450e75a134efa845969fded88a3ead86c7151f5",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/diced_potatoes_with_chicken_cuts.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/diced_potatoes_with_chicken_cuts.json",
+   "sha256_source": "54c689015e36e7cb83568231855b47d06b02963cfe243c8ad3a9019e84bc9ba5",
+   "sha256_dest": "54c689015e36e7cb83568231855b47d06b02963cfe243c8ad3a9019e84bc9ba5",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/diced_potatoes_with_egg_and_tomato.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/diced_potatoes_with_egg_and_tomato.json",
+   "sha256_source": "8448897deb4396c8e63ed08ad968e5a2951af44febab1a9f6081d418dbdc1611",
+   "sha256_dest": "8448897deb4396c8e63ed08ad968e5a2951af44febab1a9f6081d418dbdc1611",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/diced_potatoes_with_porkchop.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/diced_potatoes_with_porkchop.json",
+   "sha256_source": "23083a8b5edc7de7f2596bd2aac60a6c4a119f3261bcb90de7e0725291b72b06",
+   "sha256_dest": "23083a8b5edc7de7f2596bd2aac60a6c4a119f3261bcb90de7e0725291b72b06",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/mashed_potatoes.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/mashed_potatoes.json",
+   "sha256_source": "2406b8f6876600e4b4d2952de34e2b424209b91880e371f96a5d22c3af578710",
+   "sha256_dest": "2406b8f6876600e4b4d2952de34e2b424209b91880e371f96a5d22c3af578710",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/cooking/potato_salad.json",
+   "dest": "data/moredelight/advancement/recipes/cooking/potato_salad.json",
+   "sha256_source": "1addd3a079b18a8636e15efe20e1574d6cf3c38141a0b2d8a764240bf5bf1a9c",
+   "sha256_dest": "1addd3a079b18a8636e15efe20e1574d6cf3c38141a0b2d8a764240bf5bf1a9c",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/chicken_salad.json",
+   "dest": "data/moredelight/advancement/recipes/food/chicken_salad.json",
+   "sha256_source": "80a6655280631ef592eff4801805f9adc15b91dd3b5e18b67fdfc6875ae3f053",
+   "sha256_dest": "80a6655280631ef592eff4801805f9adc15b91dd3b5e18b67fdfc6875ae3f053",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/chicken_sandwich_with_egg_and_tomato.json",
+   "dest": "data/moredelight/advancement/recipes/food/chicken_sandwich_with_egg_and_tomato.json",
+   "sha256_source": "e4af0eb84c942bfff24bdb2d738919a183e6f3090e1093fb400a591e61616339",
+   "sha256_dest": "e4af0eb84c942bfff24bdb2d738919a183e6f3090e1093fb400a591e61616339",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/chocolate_popsicle.json",
+   "dest": "data/moredelight/advancement/recipes/food/chocolate_popsicle.json",
+   "sha256_source": "1b0b4cdd78d828cf9837e68b5c8d12be85aacf930aef1bc596ceb2ddab531b4f",
+   "sha256_dest": "1b0b4cdd78d828cf9837e68b5c8d12be85aacf930aef1bc596ceb2ddab531b4f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/egg_with_bacon_sandwich.json",
+   "dest": "data/moredelight/advancement/recipes/food/egg_with_bacon_sandwich.json",
+   "sha256_source": "8942fc6fc4da3cd52f9e99f4f70d2ede0b8b0b26a3dbac14feee6cf7dfaf6fad",
+   "sha256_dest": "8942fc6fc4da3cd52f9e99f4f70d2ede0b8b0b26a3dbac14feee6cf7dfaf6fad",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/hamburger_with_egg.json",
+   "dest": "data/moredelight/advancement/recipes/food/hamburger_with_egg.json",
+   "sha256_source": "1ce2713167ca6467e63c207afa46094fbd557b32d57088dc14c4669c3627f2c8",
+   "sha256_dest": "1ce2713167ca6467e63c207afa46094fbd557b32d57088dc14c4669c3627f2c8",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/loaded_hamburger.json",
+   "dest": "data/moredelight/advancement/recipes/food/loaded_hamburger.json",
+   "sha256_source": "1f02318b6b3d9d745625490de605090dcf02a3a0f3806e04f587415512d6a39f",
+   "sha256_dest": "1f02318b6b3d9d745625490de605090dcf02a3a0f3806e04f587415512d6a39f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/porkchop_sandwich.json",
+   "dest": "data/moredelight/advancement/recipes/food/porkchop_sandwich.json",
+   "sha256_source": "b5fa8c7df8343b40dff073d7402ea2ff6435d9314a7d53fd0f34d867896b8840",
+   "sha256_dest": "b5fa8c7df8343b40dff073d7402ea2ff6435d9314a7d53fd0f34d867896b8840",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/simple_hamburger.json",
+   "dest": "data/moredelight/advancement/recipes/food/simple_hamburger.json",
+   "sha256_source": "bbdcbc74b5ca48e11d5ed79d49acb43f863cbd9dab8711d708af142cf7502ce6",
+   "sha256_dest": "bbdcbc74b5ca48e11d5ed79d49acb43f863cbd9dab8711d708af142cf7502ce6",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/steak_sandwich.json",
+   "dest": "data/moredelight/advancement/recipes/food/steak_sandwich.json",
+   "sha256_source": "24f9482e3abd5618313714c231f259fff21dbcf6902ee65674259e34809c90a4",
+   "sha256_dest": "24f9482e3abd5618313714c231f259fff21dbcf6902ee65674259e34809c90a4",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/toast_campfire_cooking.json",
+   "dest": "data/moredelight/advancement/recipes/food/toast_campfire_cooking.json",
+   "sha256_source": "b3d9ec16a1d7d209b67acc862ea14ab5a10f2250518416e5a24d2aa72fb89a19",
+   "sha256_dest": "b3d9ec16a1d7d209b67acc862ea14ab5a10f2250518416e5a24d2aa72fb89a19",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/toast_smelting.json",
+   "dest": "data/moredelight/advancement/recipes/food/toast_smelting.json",
+   "sha256_source": "a107f2db7124aaa9a474bad9b535f17158bb9d49dfbdd73aa93c7390b7f33b9b",
+   "sha256_dest": "a107f2db7124aaa9a474bad9b535f17158bb9d49dfbdd73aa93c7390b7f33b9b",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/toast_smoking.json",
+   "dest": "data/moredelight/advancement/recipes/food/toast_smoking.json",
+   "sha256_source": "a3a559cd82c4eb1cab367b62cdfdc78b871344863d41f4089a5dcaf1e4163345",
+   "sha256_dest": "a3a559cd82c4eb1cab367b62cdfdc78b871344863d41f4089a5dcaf1e4163345",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/toast_with_chocolate.json",
+   "dest": "data/moredelight/advancement/recipes/food/toast_with_chocolate.json",
+   "sha256_source": "b1efd242ea4d4e1b0f073258595ab9785e5273d548823ba8312465f6a6781c0b",
+   "sha256_dest": "b1efd242ea4d4e1b0f073258595ab9785e5273d548823ba8312465f6a6781c0b",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/toast_with_egg.json",
+   "dest": "data/moredelight/advancement/recipes/food/toast_with_egg.json",
+   "sha256_source": "7ca3725da14942227c998e5cb9a05c62b9675926171786037bd3eb9198e5d38b",
+   "sha256_dest": "7ca3725da14942227c998e5cb9a05c62b9675926171786037bd3eb9198e5d38b",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/toast_with_glow_berries.json",
+   "dest": "data/moredelight/advancement/recipes/food/toast_with_glow_berries.json",
+   "sha256_source": "80c125b6bd2a951a15388a426421a4fcf5fe84ce9f67ae2ad4998a51ac3135b9",
+   "sha256_dest": "80c125b6bd2a951a15388a426421a4fcf5fe84ce9f67ae2ad4998a51ac3135b9",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/toast_with_honey.json",
+   "dest": "data/moredelight/advancement/recipes/food/toast_with_honey.json",
+   "sha256_source": "5071c6bc841ff2093e9e1a0b8cc6693403957ea39b627ccba3c317fbed8ad9fa",
+   "sha256_dest": "5071c6bc841ff2093e9e1a0b8cc6693403957ea39b627ccba3c317fbed8ad9fa",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/toast_with_sweet_berries.json",
+   "dest": "data/moredelight/advancement/recipes/food/toast_with_sweet_berries.json",
+   "sha256_source": "d59d558c471de7f644b0ee218a6f3659434881b646d0045593e46cd0e95a2c99",
+   "sha256_dest": "d59d558c471de7f644b0ee218a6f3659434881b646d0045593e46cd0e95a2c99",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/advancement/recipes/food/tomato_sandwich.json",
+   "dest": "data/moredelight/advancement/recipes/food/tomato_sandwich.json",
+   "sha256_source": "56724f3d577a7f47f29efe0270c07d67b6f08576113e91eb4ea0c8e669af0ea2",
+   "sha256_dest": "56724f3d577a7f47f29efe0270c07d67b6f08576113e91eb4ea0c8e669af0ea2",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/farmersdelight/recipe/bacon_sandwich.json",
+   "dest": "data/moredelight/recipe/bacon_sandwich_from_bread_slices.json",
+   "sha256_source": "9f39fcb41ceadec003c119ddbd73dccc05cde8b53d25af8729cdd3eb62a22e31",
+   "sha256_dest": "9f39fcb41ceadec003c119ddbd73dccc05cde8b53d25af8729cdd3eb62a22e31",
+   "rule": "relocate"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/chicken_salad.json",
+   "dest": "data/moredelight/recipe/chicken_salad.json",
+   "sha256_source": "82a4babc615718e4128077dc93b771c16b610182d00f595c44dc43bc2d8b5679",
+   "sha256_dest": "82a4babc615718e4128077dc93b771c16b610182d00f595c44dc43bc2d8b5679",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/chicken_sandwich_with_egg_and_tomato.json",
+   "dest": "data/moredelight/recipe/chicken_sandwich_with_egg_and_tomato.json",
+   "sha256_source": "ab08d7eb47c1c109dccc0dd31921bc49073f172ec80e6b379f4135014cbae0b5",
+   "sha256_dest": "ab08d7eb47c1c109dccc0dd31921bc49073f172ec80e6b379f4135014cbae0b5",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/chocolate_popsicle.json",
+   "dest": "data/moredelight/recipe/chocolate_popsicle.json",
+   "sha256_source": "6d18fdb4c4c7f64245ae2a5e96155fd977aef7d6ca66ee812139dcf2a721cbc5",
+   "sha256_dest": "6d18fdb4c4c7f64245ae2a5e96155fd977aef7d6ca66ee812139dcf2a721cbc5",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/carrot_soup.json",
+   "dest": "data/moredelight/recipe/cooking/carrot_soup.json",
+   "sha256_source": "31902f36062c0e4734376f01d2fd0f979490c418f7ed4436795c7532ed4f3077",
+   "sha256_dest": "31902f36062c0e4734376f01d2fd0f979490c418f7ed4436795c7532ed4f3077",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/cooked_rice_with_beef.json",
+   "dest": "data/moredelight/recipe/cooking/cooked_rice_with_beef.json",
+   "sha256_source": "08888391a3ce912bff37b5588372bca72c07161ec6932da89fbb83bb473fe8e7",
+   "sha256_dest": "08888391a3ce912bff37b5588372bca72c07161ec6932da89fbb83bb473fe8e7",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/cooked_rice_with_chicken_cuts.json",
+   "dest": "data/moredelight/recipe/cooking/cooked_rice_with_chicken_cuts.json",
+   "sha256_source": "ebd74883c91a827ecb19ccabd1fc7dfac3d33e2898353a5b01ca65efaa454b71",
+   "sha256_dest": "ebd74883c91a827ecb19ccabd1fc7dfac3d33e2898353a5b01ca65efaa454b71",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/cooked_rice_with_porkchop.json",
+   "dest": "data/moredelight/recipe/cooking/cooked_rice_with_porkchop.json",
+   "sha256_source": "d7a5ef54fa0293615e8e66f1040be450a7008aea531a3e89d8a9e023c95c5af0",
+   "sha256_dest": "d7a5ef54fa0293615e8e66f1040be450a7008aea531a3e89d8a9e023c95c5af0",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/creamy_pasta_with_chicken_cuts.json",
+   "dest": "data/moredelight/recipe/cooking/creamy_pasta_with_chicken_cuts.json",
+   "sha256_source": "2ad3379dfad1c0189fa680fe1db17dae7606959f0622a602744c2fbddd0bc3b1",
+   "sha256_dest": "2ad3379dfad1c0189fa680fe1db17dae7606959f0622a602744c2fbddd0bc3b1",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/creamy_pasta_with_ham.json",
+   "dest": "data/moredelight/recipe/cooking/creamy_pasta_with_ham.json",
+   "sha256_source": "2c23cca7d0e50ce9d76e2e041e5e0ee2b9362cc439d66b5c51da3a7e17ca15db",
+   "sha256_dest": "2c23cca7d0e50ce9d76e2e041e5e0ee2b9362cc439d66b5c51da3a7e17ca15db",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/diced_potatoes_with_beef.json",
+   "dest": "data/moredelight/recipe/cooking/diced_potatoes_with_beef.json",
+   "sha256_source": "712a9ed8891eb86b5133b282ae252d9f3f2e2313959fa4a1013327812575cc61",
+   "sha256_dest": "712a9ed8891eb86b5133b282ae252d9f3f2e2313959fa4a1013327812575cc61",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/diced_potatoes_with_chicken_cuts.json",
+   "dest": "data/moredelight/recipe/cooking/diced_potatoes_with_chicken_cuts.json",
+   "sha256_source": "1c5e08c9d96e28edce4eefb385f7516c9dc16433dde50bdfc13667963983827f",
+   "sha256_dest": "1c5e08c9d96e28edce4eefb385f7516c9dc16433dde50bdfc13667963983827f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/diced_potatoes_with_egg_and_tomato.json",
+   "dest": "data/moredelight/recipe/cooking/diced_potatoes_with_egg_and_tomato.json",
+   "sha256_source": "ff91b98c12d8c17b7d39923ffb076aa9eca3a83a8c2ffe3a16fa6ba841a4ef8a",
+   "sha256_dest": "ff91b98c12d8c17b7d39923ffb076aa9eca3a83a8c2ffe3a16fa6ba841a4ef8a",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/diced_potatoes_with_porkchop.json",
+   "dest": "data/moredelight/recipe/cooking/diced_potatoes_with_porkchop.json",
+   "sha256_source": "9bfc7430534e57ec4789e8601f03796e9160f76f696f256a519534808ca91df9",
+   "sha256_dest": "9bfc7430534e57ec4789e8601f03796e9160f76f696f256a519534808ca91df9",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/mashed_potatoes.json",
+   "dest": "data/moredelight/recipe/cooking/mashed_potatoes.json",
+   "sha256_source": "55bc7e9e7ef619889d7efad75e323e495738dcc03d5dd51532976bb0612bd7b6",
+   "sha256_dest": "55bc7e9e7ef619889d7efad75e323e495738dcc03d5dd51532976bb0612bd7b6",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/cooking/potato_salad.json",
+   "dest": "data/moredelight/recipe/cooking/potato_salad.json",
+   "sha256_source": "9b5108ba9ccbe6d49584e6cbf9691f682100e4b729343f85dc99c103a8175de3",
+   "sha256_dest": "9b5108ba9ccbe6d49584e6cbf9691f682100e4b729343f85dc99c103a8175de3",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/recipe/cutting/bread_slice.json",
+   "dest": "data/moredelight/recipe/cutting/bread_slice.json",
+   "sha256_source": "702a68dc3b563cc72c7ebe8c673fcb6e5c69138c33df29536c8575a6c14976c3",
+   "sha256_dest": "702a68dc3b563cc72c7ebe8c673fcb6e5c69138c33df29536c8575a6c14976c3",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/recipe/cutting/diced_potatoes.json",
+   "dest": "data/moredelight/recipe/cutting/diced_potatoes.json",
+   "sha256_source": "577dcd5c65c5387f8c3d470b9ecc81f1a89d588573d4b27d9f477871b0f3d8df",
+   "sha256_dest": "577dcd5c65c5387f8c3d470b9ecc81f1a89d588573d4b27d9f477871b0f3d8df",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/egg_with_bacon_sandwich.json",
+   "dest": "data/moredelight/recipe/egg_with_bacon_sandwich.json",
+   "sha256_source": "374cf83ff9bede073749a219e63a2825dc6cf1b3c60f6104384765763d04cb7d",
+   "sha256_dest": "374cf83ff9bede073749a219e63a2825dc6cf1b3c60f6104384765763d04cb7d",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/hamburger_with_egg.json",
+   "dest": "data/moredelight/recipe/hamburger_with_egg.json",
+   "sha256_source": "3559a25a16fd1a0c347ef5062d0adb697bc4033ae7dc7d827a9a462b72b77360",
+   "sha256_dest": "3559a25a16fd1a0c347ef5062d0adb697bc4033ae7dc7d827a9a462b72b77360",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/loaded_hamburger.json",
+   "dest": "data/moredelight/recipe/loaded_hamburger.json",
+   "sha256_source": "9c133355a09eda02671617f850518e6b7474f7b218ff2d87599de0c01bb9ff76",
+   "sha256_dest": "9c133355a09eda02671617f850518e6b7474f7b218ff2d87599de0c01bb9ff76",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/recipe/omelette_campfire_cooking.json",
+   "dest": "data/moredelight/recipe/omelette_campfire_cooking.json",
+   "sha256_source": "77f3fb7a87ed7ace502d9b75a4842ff2ce25f3e71850d3e0b6a7ade0de12f4b8",
+   "sha256_dest": "77f3fb7a87ed7ace502d9b75a4842ff2ce25f3e71850d3e0b6a7ade0de12f4b8",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/recipe/omelette_smelting.json",
+   "dest": "data/moredelight/recipe/omelette_smelting.json",
+   "sha256_source": "7129da5a91182fc77d6d6045c43aa0ae9677f757c74ff71acf1e84bce3f9d41f",
+   "sha256_dest": "7129da5a91182fc77d6d6045c43aa0ae9677f757c74ff71acf1e84bce3f9d41f",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/recipe/omelette_smoking.json",
+   "dest": "data/moredelight/recipe/omelette_smoking.json",
+   "sha256_source": "8e002099020619d86ae2227c75713e62c2ed8133277924ca62e2a03527a1bdb5",
+   "sha256_dest": "8e002099020619d86ae2227c75713e62c2ed8133277924ca62e2a03527a1bdb5",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/porkchop_sandwich.json",
+   "dest": "data/moredelight/recipe/porkchop_sandwich.json",
+   "sha256_source": "c44799b82e70b6464363896e0f6dca585374b27e1ba1fea8d6d73a720db48a39",
+   "sha256_dest": "c44799b82e70b6464363896e0f6dca585374b27e1ba1fea8d6d73a720db48a39",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/simple_hamburger.json",
+   "dest": "data/moredelight/recipe/simple_hamburger.json",
+   "sha256_source": "bf54bd3bbeab94350b3716a64c717c4ed111fa7a5de4231c9cd6a83b3f200488",
+   "sha256_dest": "bf54bd3bbeab94350b3716a64c717c4ed111fa7a5de4231c9cd6a83b3f200488",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/steak_sandwich.json",
+   "dest": "data/moredelight/recipe/steak_sandwich.json",
+   "sha256_source": "cb6013aaf499c5b49a6cc15b360d1ec4a23ce527c7d21d43ef402745b4aa3009",
+   "sha256_dest": "cb6013aaf499c5b49a6cc15b360d1ec4a23ce527c7d21d43ef402745b4aa3009",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/stone_knife.json",
+   "dest": "data/moredelight/recipe/stone_knife.json",
+   "sha256_source": "27300b72644edb387993ae8fe9254748bbe84d27bee392d7a6526906565a4569",
+   "sha256_dest": "27300b72644edb387993ae8fe9254748bbe84d27bee392d7a6526906565a4569",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/recipe/toast_campfire_cooking.json",
+   "dest": "data/moredelight/recipe/toast_campfire_cooking.json",
+   "sha256_source": "03b9e434276a7c9c78efd0291e1bdc62e2addd7a581bcd802c22c1a1d6848835",
+   "sha256_dest": "03b9e434276a7c9c78efd0291e1bdc62e2addd7a581bcd802c22c1a1d6848835",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/recipe/toast_smelting.json",
+   "dest": "data/moredelight/recipe/toast_smelting.json",
+   "sha256_source": "85514e3b5b71a2881b5e716940be72b8cd8894d0b98c59e1e4c815fe9debb1cd",
+   "sha256_dest": "85514e3b5b71a2881b5e716940be72b8cd8894d0b98c59e1e4c815fe9debb1cd",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/data/moredelight/recipe/toast_smoking.json",
+   "dest": "data/moredelight/recipe/toast_smoking.json",
+   "sha256_source": "bf0dc7f716a5f11a771103aea0eec7363f928c462d606f207b87cc0ee1274279",
+   "sha256_dest": "bf0dc7f716a5f11a771103aea0eec7363f928c462d606f207b87cc0ee1274279",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/toast_with_chocolate.json",
+   "dest": "data/moredelight/recipe/toast_with_chocolate.json",
+   "sha256_source": "0573eba62f4205463b7ae6d0890e7f9c593b2acadb04dcce5ae4289f80520bd7",
+   "sha256_dest": "0573eba62f4205463b7ae6d0890e7f9c593b2acadb04dcce5ae4289f80520bd7",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/toast_with_egg.json",
+   "dest": "data/moredelight/recipe/toast_with_egg.json",
+   "sha256_source": "291b4d8469e6af11663ca2a8a32a4a2d02b6fca980bb6bcbcade0e3d1146ea21",
+   "sha256_dest": "291b4d8469e6af11663ca2a8a32a4a2d02b6fca980bb6bcbcade0e3d1146ea21",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/toast_with_glow_berries.json",
+   "dest": "data/moredelight/recipe/toast_with_glow_berries.json",
+   "sha256_source": "2ae679e1431515c9178f62485aee2d90a1c313ed85a30b4c97cea57376992e97",
+   "sha256_dest": "2ae679e1431515c9178f62485aee2d90a1c313ed85a30b4c97cea57376992e97",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/toast_with_honey.json",
+   "dest": "data/moredelight/recipe/toast_with_honey.json",
+   "sha256_source": "3a406ba011f09639fd48db4417ef1e2af136774e7ba6df8b781a82fa6286b804",
+   "sha256_dest": "3a406ba011f09639fd48db4417ef1e2af136774e7ba6df8b781a82fa6286b804",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/toast_with_sweet_berries.json",
+   "dest": "data/moredelight/recipe/toast_with_sweet_berries.json",
+   "sha256_source": "ddecc9d6b205709065abe2a1454ef4b17a9ac230fa00fd1ef078dcef401826c3",
+   "sha256_dest": "ddecc9d6b205709065abe2a1454ef4b17a9ac230fa00fd1ef078dcef401826c3",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/tomato_sandwich.json",
+   "dest": "data/moredelight/recipe/tomato_sandwich.json",
+   "sha256_source": "f05a424166577ab4cfe28847240b5a8d938c69e8e4802e76302db3322188b548",
+   "sha256_dest": "f05a424166577ab4cfe28847240b5a8d938c69e8e4802e76302db3322188b548",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/generated/data/moredelight/recipe/wooden_knife.json",
+   "dest": "data/moredelight/recipe/wooden_knife.json",
+   "sha256_source": "d4888ec3ff9465dd868d2d14ae9d3bcbf8651749e0b8207028e0e8b60d80fdf9",
+   "sha256_dest": "d4888ec3ff9465dd868d2d14ae9d3bcbf8651749e0b8207028e0e8b60d80fdf9",
+   "rule": "copy"
+  },
+  {
+   "source": "src/main/resources/assets/moredelight/logo.png",
+   "dest": "icon.png",
+   "sha256_source": "a041332f075b7b6c9b090477d45a83a18665d690b0e3ec2605bb5f945b01489a",
+   "sha256_dest": "a041332f075b7b6c9b090477d45a83a18665d690b0e3ec2605bb5f945b01489a",
+   "rule": "copy_as"
+  }
+ ]
+}

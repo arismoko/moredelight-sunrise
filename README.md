@@ -18,7 +18,14 @@ Version `26.9.16-horizon.1`, for the Farmer's Delight Horizon port `3.6.30-horiz
 
 ## Building from source
 
+More Delight's files under `assets/`, `data/` and `icon.png` are written by `tools/carry_md.py` from a More Delight
+checkout at the pinned commit (`tools/carry_rules_md.toml.in`); never edit them by hand. The carry imports the base's
+`tools/carry_lib.py` from a farmersdelight-horizon checkout at the pinned base commit and needs the Minecraft 26.3
+client jar (read as a zip) for the tag check:
+
 ```sh
+python3 tools/carry_md.py --md <MoreDelight> --base <farmersdelight-horizon> --vanilla <client.jar> --check
+FD_BASE=<farmersdelight-horizon> python3 tools/test_carry_md.py
 cargo horizon-mod build      # target/horizon-mod/ported_moredelight.hmod
 cargo horizon-mod check target/horizon-mod/ported_moredelight.hmod
 ```

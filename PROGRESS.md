@@ -24,3 +24,22 @@ base (`ported_farmersdelight`) commit and version it was validated with.
   out of fd-port; the refusal path is the same `Missing` check).
 - evidence: `../run/shots/md-01/` (mods-screen.png, missing.log, crash report).
 - next: MD-02 (deterministic MD carry).
+
+## MD-02 Deterministic MD carry — PASS — 2026-11-16
+- base: farmersdelight-horizon 39d0d5e (`3.6.30-horizon.2`) | addon commit: (this commit)
+- `tools/carry_md.py` + `tools/carry_rules_md.toml.in`: imports the base's `carry_lib.py` from `--base` (checked at the
+  pinned base commit), MD checked at `360e6117…`; every source file must match exactly one rule (copy, exclude,
+  relocate, drop, overlay) or the carry fails. R1 copy `assets/moredelight/`, `data/moredelight/`, `data/c/tags/`;
+  R2 exclude Casualness/Create/Expanded Delight/Nutritious Feast/Supplementaries data and `fabric.mod.json`;
+  R3 knives tag → overlay; R4 `bacon_sandwich` → `moredelight:bacon_sandwich_from_bread_slices` (content unchanged,
+  MA1); R5 `craft_knife` advancement dropped and logged (MA2); R6 effect-tooltip overlay = the 31 `addon.food(...)`
+  ids of `MoreDelight.java` (3 commented-out foods skipped); R7 tag universe (vanilla 26.3 jar + base + output):
+  0 undefined. Namespace fence check: 0 files outside `moredelight` / `c` tags. Also `logo.png` → `icon.png`.
+- counts (as plan §5.4): 33 item definitions, 33 models, 41 textures, 34 lang, 38 recipes (37 + 1 relocated),
+  41 advancements, 3 `c` tag files; 225 files (+ logo and icon); overlay `tools/overlay/moredelight.json`: knives
+  2 ids, effect_tooltip 31 ids. `--check` byte-identical on rerun ("carry check ok: 225 files").
+- `tools/test_carry_md.py` 3 OK (rules on a fixture tree, unruled file fails, undefined tag fails).
+- package: 229 entries, `cargo horizon-mod check` clean.
+- note: the base keeps its initial MD overlay (knives only) until BX-03 adds the `effect_tooltip` tag; the base's copy
+  is then replaced with this generated file.
+- next: MD-03 (item declarations and creative tab).
