@@ -266,4 +266,5 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - cleanup: test world `MDV8` moved to `../run/trash/MDV8-md12`; FDServer pad removed, forceload removed, clients and
   server stopped; fd-port's mod list back to `mod.ported_moredelight:true`; the user's FDTest world was not opened.
 - deltas: none new (MA1, MA2 as planned). Engine observations used: E-39, E-40.
-- next: More Delight scope done. Corn Delight (BX-04, BX-05, BX-06, BX-09, CD-01…CD-18) only when the user asks.
+- next: BX-04 (base PROGRESS; user set the scope to all of Corn Delight on 2026-11-16), then BX-05, BX-06, BX-09,
+  CD-01…CD-18 (`corndelight-horizon/PROGRESS.md`).
