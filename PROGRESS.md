@@ -100,3 +100,17 @@ base (`ported_farmersdelight`) commit and version it was validated with.
   - held FD skillet next to the stove, bread slice in the off hand, use held 6.5 s → slice −1, toast +1.
 - evidence: `../run/shots/md-05.png`, game log; values read with `data get block`.
 - next: MD-06 (cooking-pot meals).
+
+## MD-06 Cooking-pot meals (12) — IN PROGRESS (stopped at the user's request) — 2026-11-16
+- base: farmersdelight-horizon 39d0d5e (`3.6.30-horizon.2`) | addon commit: (this commit; no file change)
+- done in game (FDM6, row of 12 lit FD stoves + pots at x 59994..60005, y 200/201, z 59996; pad forceloaded at
+  59990,59990): each pot filled with `data merge` (one concrete item per recipe ingredient/tag + a bowl in the
+  container slot): `CookTimeTotal` 400 from the recipe; all 12 `moredelight:cooking/*` meals cooked and were served
+  into the output slot (8) with the bowl: carrot soup, 3 cooked rice, 2 creamy pasta, 4 diced potatoes meals,
+  mashed potatoes (2× diced potatoes), potato salad.
+- hopper above a pot (60007,202,59996) inserted `moredelight:diced_potatoes` ×2 and a milk bottle into the pot.
+- save/restart mid-cook: CookTime 272 / 239 before quitting → 294 / 262 read ~22 ticks after reloading (kept, not
+  reset, not instant; `tick freeze` is not saved).
+- still to do: eat a rice meal and read Nourishment 3:00 (carrot soup's Nourishment already PASS in MD-03); the
+  fixture "the 12 recipes parse in the base codec"; then record PASS.
+- next: finish MD-06, then MD-07.
