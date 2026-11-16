@@ -88,3 +88,15 @@ base (`ported_farmersdelight`) commit and version it was validated with.
   goes to `run/server-export-new` (on disk) because /tmp filled up.
 - evidence: `../run/shots/md-04/` (1 craft, 2 board, 3 diced, 4 slices, 5 toast with honey, 6 after restart, 7 Bob).
 - next: MD-05 (skillet/stove/campfire items).
+
+## MD-05 Skillet/stove/campfire items — PASS — 2026-11-16
+- base: farmersdelight-horizon 39d0d5e (`3.6.30-horizon.2`) | addon commit: (this commit; no file change)
+- in game (FDM6 pad, survival, player hands where the plan says so):
+  - furnace: FD fried egg (`#c:foods/cooked_egg`) → `omelette`; smoker: bread slice → `toast`;
+  - campfire (player right-click with a fried egg): total 600 → omelette dropped after ~624 game ticks (polling);
+  - FD stove (player right-click): egg slot total 600 → omelette (picked up at tick 837, campfire's at 1061);
+  - placed FD skillet on a lit stove: a stack of 2 bread slices taken, `CookTimeTotal` 120 (= 600 × 0.2, FD skillet
+    formula) → 2 toasts ejected;
+  - held FD skillet next to the stove, bread slice in the off hand, use held 6.5 s → slice −1, toast +1.
+- evidence: `../run/shots/md-05.png`, game log; values read with `data get block`.
+- next: MD-06 (cooking-pot meals).
