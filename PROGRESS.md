@@ -235,3 +235,35 @@ base (`ported_farmersdelight`) commit and version it was validated with.
   room (19 porkchops, wheat seeds, MD goal items).
 - deltas: none new (MA2 as planned).
 - next: MD-12 (MDM3 demo, validation matrix, release).
+
+## MD-12 MDM3 demo, validation matrix, release — PASS — 2026-11-16 — **MDM3 closed; More Delight complete**
+- base: farmersdelight-horizon 9ee9593 (tag `v3.6.30-horizon.2`, released in this task; code as 2b4487d) | build pin
+  afe471cf | addon commit: (this commit) | tag `v26.9.16-horizon.1`
+- release: `../dist/ported_moredelight-26.9.16-horizon.1.hmod` (139904 bytes, SHA-256 ab463df2…c0fa, 263 entries;
+  `cargo horizon-mod check`: "ported_moredelight 26.9.16-horizon.1 (mod, API 0.2, both) … no code: content only"),
+  byte-identical to the package used in every in-game row below. Manifest pin `ported_farmersdelight =
+  "=3.6.30-horizon.2"`. README: install, D9/AD11 multiplayer rule, E-40 removal behaviour, MA1/MA2, kept quirks
+  MQ1/MQ2/MQ5/MQ6, credits (Axperty; vectorwing and FD contributors; MehVahdJukaar and FD Refabricated contributors).
+- checks before starting: both trees clean; base cargo test 95 + 1 ignored, base carry/decl/tooltip/worldgen/fixture
+  --check, base tools/test_*.py; MD tools/test_*.py 4 OK, carry --check 225 files (base worktree at the rules pin
+  356d9ef; the base's carry_lib.py is unchanged since), gen_md_decls --check, test_lang_md --strict (0 gaps), licence
+  copies, recipe_overlap: 1708 recipes, 0 add-on conflicts.
+- ADDONS_VALIDATION §4 matrix, More Delight rows (evidence `../run/shots/md-12/` unless named):
+  | Row | Result | Evidence |
+  |---|---|---|
+  | V1 base only | PASS | base PROGRESS "MD-12 (base side)": identical WARN/ERROR set with MD off and on, FD tooltip one line, flint knife cut; `v1-base-only.log`, `v1-veg-soup.png` |
+  | V2 base + MD | PASS | §3.1 script = MD-04; MD-05…MD-11 acceptance all PASS (entries above); MA1 seen in MD-07, MA2 in MD-11 |
+  | V3 base + CD | NOT RUN | Corn Delight not started (user scope: More Delight only) |
+  | V4 base + MD + CD | NOT RUN | needs Corn Delight; recipe_overlap already takes several `--addon` |
+  | V5 base absent | PASS | new instance `md-nobase` with only the MD package: "ported_moredelight requires missing mod ported_farmersdelight", startup refused (`v5-nobase.log` + crash report); instance deleted (launcher Trash) |
+  | V6 wrong base version | PASS | MD package rebuilt in the scratchpad with `=3.6.30-horizon.1`: "ported_moredelight requires ported_farmersdelight =3.6.30-horizon.1, but installed version is 3.6.30-horizon.2", startup refused (`v6-refusal.log`, `crash-2026-11-16_20.01.28-client.txt`); release package restored (SHA checked) |
+  | V7 MD removed from a world | PASS (recorded) | MD-08: no warning (E-40), MD stacks read as air, raw ids kept in a pot, all restored when MD is turned back on |
+  | V8 MD added to a base-only world | PASS | `MDV8` created base-only (V1), then reopened with MD: "content from 2 mod(s)", no new errors; stone knife crafted in the 2×2 grid (cobblestone + stick), cut FD cabbage → 2 leaves and bread → 4 bread slices (131 → 129) |
+  | V9 save/reload/restart | PASS | in `MDV8`, full game restart: FD pot output slot `moredelight:mashed_potatoes` kept; MD stone knife lying on the FD board kept damage 2; a fried egg on the FD stove (cook in progress at quit) finished after the restart → `moredelight:omelette` dropped (`v8-v9.log`); mid-cook MD pot recipe across a restart = MD-06 (CookTime 272 → 294) |
+  | V10 multiplayer | PASS (dedicated server) / LAN ENVIRONMENT-BLOCKED | dedicated server re-exported with base 2b4487d code (`run/server-engine`, clients from `native-afe471c-b4e4b8e7033e`), server, Alice and Bob each with the release MD package: "content from 2 mod(s)"; Bob (survival) cut a potato with the MD stone knife (130/131) → diced potatoes seen by both clients; an MD pot recipe (mashed potatoes) finished on the server and Bob took it from the pot menu (slot 308; `v10-bob-pot.png`); Alice cut bread with the MD wooden knife (59 → 58) → 4 bread slices seen by both clients (`v10-server.log`). LAN: the offline developer session refuses `lan open` (as in MD-08); no feasts/popcorn/cob pipe/trades in MD |
+  | V11 config | PASS (MD part) | FD `enableFoodEffectTooltip=false` hides MD's tooltip lines (MD-10, `../run/shots/bx-03/off-montage.png`); the CD keys and `farmersBuyFDCrops` belong to Corn Delight |
+  | V12 performance (CD) | NOT RUN | Corn Delight row |
+- cleanup: test world `MDV8` moved to `../run/trash/MDV8-md12`; FDServer pad removed, forceload removed, clients and
+  server stopped; fd-port's mod list back to `mod.ported_moredelight:true`; the user's FDTest world was not opened.
+- deltas: none new (MA1, MA2 as planned). Engine observations used: E-39, E-40.
+- next: More Delight scope done. Corn Delight (BX-04, BX-05, BX-06, BX-09, CD-01…CD-18) only when the user asks.
