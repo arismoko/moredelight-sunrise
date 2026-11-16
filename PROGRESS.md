@@ -129,3 +129,26 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - AD14 second pass: not needed; the item declarations already carry Nourishment (MD-03).
 - deltas: none new.
 - next: MD-07 (crafted foods and relocated bacon sandwich).
+
+## MD-07 Crafted foods and relocated bacon sandwich — PASS — 2026-11-16
+- base: farmersdelight-horizon b9e88cf (package `3.6.30-horizon.2`) | addon commit: (this commit)
+- in game (fd-port, FDM6, survival, crafting table at 60002,200,60005; driven through `run/ctl` grid slots 100+ /
+  result 200; log `../run/shots/md-07/craft.log`): all 15 MD crafting foods crafted once with the expected result —
+  simple/with-egg/loaded hamburger, steak/porkchop/tomato/egg-with-bacon/chicken-with-egg-and-tomato sandwiches,
+  chicken salad, chocolate popsicle (shaped), 5 toasts. `loaded_hamburger` from bread, FD beef patty, cabbage leaf
+  (`#c:foods/leafy_green`), tomato, cooked bacon, fried egg, onion (`../run/shots/md-07/loaded-hamburger.png`).
+- MA1: `moredelight:bacon_sandwich_from_bread_slices` (2 bread slices) **and** FD's `farmersdelight:bacon_sandwich`
+  (loaf) both give `farmersdelight:bacon_sandwich` (`../run/shots/md-07/ma1-bacon-slices.png`).
+- MQ6: `egg_with_bacon_sandwich` crafted from 2 toasts (toast in `#c:bread_slices`).
+- toast with honey leaves the glass bottle in the grid (vanilla remainder).
+- `tools/recipe_overlap.py` (ADDONS_VALIDATION §2.3; `--base ../farmersdelight-horizon --vanilla
+  ../minecraft-26.3-client.jar`): vanilla + base (+ add-on tag overlays) + MD = 1708 recipes resolved, none skipped
+  (`farmersdelight:item_ability` tools compared by ability name); MD's 38 recipes overlap nothing (MA1 vs loaf: 5 vs 4
+  ingredients). One base-only pair, reference behaviour, not judged: `farmersdelight:cake_from_milk_bottle` vs
+  `minecraft:cake`. Fixtures `tools/test_recipe_overlap.py` 5 OK (shaped/tag conflict, shaped vs shapeless, tag merge
+  with counts, same result, cutting tool overlap incl. `fabric:any` abilities). Limit: a tag tool and an ability tool
+  are never treated as overlapping.
+- test-world notes: FDM6 inventory moved to a chest at 60003,200,60004 (27 stacks) when it filled up; a few spilled
+  `/give` materials were left to despawn. Restored creative + Peaceful.
+- deltas: none new (MA1 as planned).
+- next: MD-08 (MDM2 demo).
