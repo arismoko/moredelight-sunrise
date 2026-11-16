@@ -152,3 +152,27 @@ base (`ported_farmersdelight`) commit and version it was validated with.
   `/give` materials were left to despawn. Restored creative + Peaceful.
 - deltas: none new (MA1 as planned).
 - next: MD-08 (MDM2 demo).
+
+## MD-08 MDM2 demo — PASS — 2026-11-16 — **MDM2 closed**
+- base: farmersdelight-horizon 4e906d6 (package `3.6.30-horizon.2` unchanged) | addon commit: (this commit; no file change)
+- recorded tour (fd-port, FDM6, survival/Easy; recording `../run/horizon-home/instances/fd-port/recordings/
+  2026-11-16_11-05-07-md-08-demo`, exported `…/repro/2026-11-16_11-05-07-md-08-demo.zip`; log
+  `../run/shots/md-08/tour.log`, shots `1-pot-cooking.png`, `2-pot-done.png`, `3-nourishment.png`):
+  fried egg right-clicked onto the FD stove → omelette after 30 s (600 t); new lit stove + pot at 60009,200/201,59996
+  filled through its menu (milk bottle, rice, beef, bowl in 307) → `cooked_rice_with_beef` taken from 308; loaded
+  hamburger crafted; rice meal eaten → Nourishment 3571 t left.
+- save & quit + restart: every MD stack identical, pot state kept, Nourishment 3102 → 3093 t (load gap).
+- guest: the offline developer session refuses `lan open` ("single-player only"), so the guest ran on the dedicated
+  server rig as in M3/M5/M7 and MD-04 (`run/fd-server`, client `run/mp` B = Bob, offscreen; pad at
+  60000..60016,199 in FDServer, forceload removed afterwards): Bob filled a pot through its menu →
+  `cooked_rice_with_beef` taken (0 → 1) (`bob-pot-done.png`) and crafted a `tomato_sandwich` (log `bob.log`). With
+  MD-04's guest cut of a potato by MD's cutting recipe this also closes BX-10's client-sync half.
+- MD removed (copy `FDM6noMD`, `mod.ported_moredelight:false`): the world opens with no dialog and **no mismatch
+  warning**: the save's `fml.LoadingModList` records only `ported_farmersdelight` (content-only mods are never listed,
+  so `mod_mismatch` cannot fire for them; recorded as engine observation **E-40**). MD stacks in the inventory read
+  as `minecraft:air` with their counts; a pot's saved output keeps the raw id `moredelight:mashed_potatoes`. After
+  saving without MD and re-enabling it, every MD stack and the pot output came back unchanged. Copy moved to
+  `../run/trash/FDM6noMD-md08`; the instance's mod list restored (`mod.ported_moredelight:true`).
+- side finding (user report during this task): creative tab names overlap on page 2 → base E-39 (engine).
+- deltas: none new.
+- next: MD-09 (knife parity via the base overlay).
