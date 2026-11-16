@@ -114,3 +114,18 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - still to do: eat a rice meal and read Nourishment 3:00 (carrot soup's Nourishment already PASS in MD-03); the
   fixture "the 12 recipes parse in the base codec"; then record PASS.
 - next: finish MD-06, then MD-07.
+
+## MD-06 Cooking-pot meals (12) — PASS — 2026-11-16
+- base: farmersdelight-horizon b9e88cf (package `3.6.30-horizon.2` unchanged; the new commit adds a test only) |
+  addon commit: (this commit; no file change)
+- in game (earlier entry): all 12 `moredelight:cooking/*` meals cooked in the FD pot with a bowl, hopper insert,
+  save/restart mid-cook keeps CookTime.
+- Nourishment: FDM6, survival on Easy, food 8, ate `moredelight:cooked_rice_with_beef` (hold use 3 s, looking at the
+  sky; looking at the stove the click goes to the stove): `farmersdelight:nourishment` amplifier 0, 3571 t left
+  when read (3600 = 3:00), bowl returned, food 20. Screenshot `../run/shots/md-06/rice-nourishment.png`. Restored
+  creative + Peaceful; random_tick_speed 3.
+- fixture: base `recipes::cooking::addon_dir_recipes_parse` on `data/moredelight/recipe/cooking`: 12 parsed by the
+  base codec, every one Meals / 400 t / 1.0 XP / bowl container.
+- AD14 second pass: not needed; the item declarations already carry Nourishment (MD-03).
+- deltas: none new.
+- next: MD-07 (crafted foods and relocated bacon sandwich).
