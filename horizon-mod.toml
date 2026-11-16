@@ -1,0 +1,14 @@
+id = "ported_moredelight"
+name = "More Delight (Horizon port)"
+version = "26.9.16-horizon.1"
+description = "Horizon port of More Delight 26.09.16 (Minecraft 26.3), an add-on for Farmer's Delight"
+authors = []
+license = "MIT"
+credits = "More Delight © 2024 Axperty; Farmer's Delight © 2020 vectorwing"
+api = "0.2"
+side = "both"
+capabilities = ["registries"]
+namespaces = ["moredelight"]
+
+[dependencies]
+ported_farmersdelight = "=3.6.30-horizon.2"

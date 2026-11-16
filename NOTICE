@@ -1,0 +1,24 @@
+More Delight (Horizon port)
+===========================
+
+This port's own files (tools, declarations, documentation) are MIT licensed (see LICENSE).
+
+More Delight
+------------
+Data, assets and item values are carried or adapted from More Delight
+(https://github.com/axperty/moredelight, branch 26.3-fabric, commit
+360e61172756e8b22d4d647753321002c7452d35, version 26.09.16-26.3-fabric),
+MIT License, Copyright (c) 2024 Axperty; its LICENSE also carries Farmer's
+Delight's MIT notice, Copyright (c) 2020 vectorwing. Full text:
+LICENSE-moredelight (also third_party/moredelight/LICENSE).
+
+Item behaviour follows DelightLib (https://github.com/axperty/delightlib,
+commit f0017bf3f4d1b541fb20e3cf3399c1a87c7061e2, MIT, Copyright (c) 2026
+Axperty), read as a reference; nothing from it is shipped.
+
+Farmer's Delight
+----------------
+This add-on needs the Farmer's Delight Horizon port (ported_farmersdelight),
+which carries Farmer's Delight Refabricated under MIT (see that mod's NOTICE).
+
+No vanilla Minecraft assets are extracted or redistributed.

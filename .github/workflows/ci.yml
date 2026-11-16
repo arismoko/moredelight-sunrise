@@ -1,0 +1,21 @@
+name: Checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: JSON parses
+        run: find assets data -name '*.json' -print0 2>/dev/null | xargs -0 -r -n1 python3 -m json.tool > /dev/null
+      - name: Licence copies match
+        run: |
+          cmp LICENSE-moredelight assets/moredelight/licenses/moredelight.txt
+          cmp NOTICE assets/moredelight/licenses/notice.txt
+          cmp LICENSE assets/moredelight/licenses/port.txt
