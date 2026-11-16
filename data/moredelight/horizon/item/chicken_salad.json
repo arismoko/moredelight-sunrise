@@ -1,0 +1,28 @@
+{
+  "template": "minecraft:stick",
+  "max_stack_size": 16,
+  "crafting_remainder": "minecraft:bowl",
+  "components": {
+    "minecraft:food": {
+      "nutrition": 6,
+      "saturation": 7.2
+    },
+    "minecraft:consumable": {
+      "on_consume_effects": [
+        {
+          "type": "minecraft:apply_effects",
+          "effects": [
+            {
+              "id": "minecraft:regeneration",
+              "duration": 100,
+              "amplifier": 0
+            }
+          ]
+        }
+      ]
+    },
+    "minecraft:use_remainder": {
+      "id": "minecraft:bowl"
+    }
+  }
+}

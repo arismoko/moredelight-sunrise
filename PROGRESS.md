@@ -43,3 +43,25 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - note: the base keeps its initial MD overlay (knives only) until BX-03 adds the `effect_tooltip` tag; the base's copy
   is then replaced with this generated file.
 - next: MD-03 (item declarations and creative tab).
+
+## MD-03 Item declarations and creative tab — PASS — 2026-11-16
+- base: farmersdelight-horizon 39d0d5e (`3.6.30-horizon.2`) | addon commit: (this commit)
+- `tools/extract_md_items.py` reads `MoreDelight.java` as text (DelightLib `knife`/`food` chains; an unknown builder
+  call fails) → `tools/decl/md_items.toml.in` (33 rows, registration order, `source` = Java line);
+  `tools/gen_md_decls.py [--check]` → `data/moredelight/horizon/item/*.json` (33) + `creative_tab/tab.json`.
+- knives = FD `knifeItem(material)` as the base declares its knives: wooden 59 durability / +0.5 damage / speed 2.0 /
+  enchantability 15 / `#minecraft:wooden_tool_materials`; stone 131 / +1.5 / 4.0 / 5 /
+  `#minecraft:stone_tool_materials`; attack speed −2.0 (MQ1), stack 1. Foods: saturation = nutrition × modifier × 2
+  (Java float, shortest decimal), default consumable, 0.8 s for the 6 toasts + toast, `apply_effects` per
+  `withEffect` (Nourishment 3600 on 6 meals, Regeneration 100 on 2 salads; MobEffectInstance defaults, so particles
+  shown), bowl foods stack 16 with bowl remainder + `use_remainder`. Chocolate popsicle has no effect (MQ5). Tab:
+  literal title "More Delight" (MQ2), icon cooked chicken. Nourishment is declared by the base, so AD14's second
+  pass is not needed.
+- `tools/test_md_decls.py` 4 OK (table = Java extraction; knife/food/tab values).
+- in game (fd-port, FDM6, offscreen): `/give` of all 33 ids works with their English names; survival with hunger:
+  toast not eaten after 0.6 s, eaten within 0.95 s (0.8 s); carrot soup not eaten after 0.95 s, eaten by 1.75 s,
+  leaves a bowl and gives Nourishment (3593 t left when read); mashed potatoes "can only stack up to 16", stone knife
+  "up to 1"; creative page 2 shows the tab "More Delight" with the cooked-chicken icon and 33 items in order with
+  their textures (`../run/shots/md-03/md-tab.png`). Knife tooltip lines were not read (the generated attribute
+  values are unit-tested; the knives' behaviour is MD-04/MD-09).
+- next: MD-04 (first playable slice).

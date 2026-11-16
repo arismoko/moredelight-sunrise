@@ -1,0 +1,195 @@
+# (Named *.toml.in: the Horizon packager refuses .toml files outside src/.)
+# More Delight's 33 items as DelightLib builds them (MD-03). Rows in registration order (= creative tab order).
+# Values are checked against MoreDelight.java by tools/test_md_decls.py; tools/gen_md_decls.py writes
+# data/moredelight/horizon/item/*.json and creative_tab/tab.json. `source` cites the Java line.
+
+[wooden_knife]
+source = "MDj/MoreDelight.java:27"
+knife = "wood"
+
+[stone_knife]
+source = "MDj/MoreDelight.java:39"
+knife = "stone"
+
+[diced_potatoes]
+source = "MDj/MoreDelight.java:51"
+nutrition = 2
+saturation_modifier = 0.4
+
+[chocolate_popsicle]
+source = "MDj/MoreDelight.java:57"
+nutrition = 3
+saturation_modifier = 0.2
+
+[omelette]
+source = "MDj/MoreDelight.java:71"
+nutrition = 6
+saturation_modifier = 0.6
+
+[cooked_rice_with_chicken_cuts]
+source = "MDj/MoreDelight.java:77"
+nutrition = 14
+saturation_modifier = 0.8
+bowl = true
+effects = [{ id = "farmersdelight:nourishment", duration = 3600, amplifier = 0, chance = 1.0 }]
+
+[cooked_rice_with_beef]
+source = "MDj/MoreDelight.java:96"
+nutrition = 14
+saturation_modifier = 0.8
+bowl = true
+effects = [{ id = "farmersdelight:nourishment", duration = 3600, amplifier = 0, chance = 1.0 }]
+
+[cooked_rice_with_porkchop]
+source = "MDj/MoreDelight.java:115"
+nutrition = 14
+saturation_modifier = 0.8
+bowl = true
+effects = [{ id = "farmersdelight:nourishment", duration = 3600, amplifier = 0, chance = 1.0 }]
+
+[creamy_pasta_with_ham]
+source = "MDj/MoreDelight.java:134"
+nutrition = 12
+saturation_modifier = 0.8
+bowl = true
+effects = [{ id = "farmersdelight:nourishment", duration = 3600, amplifier = 0, chance = 1.0 }]
+
+[creamy_pasta_with_chicken_cuts]
+source = "MDj/MoreDelight.java:154"
+nutrition = 12
+saturation_modifier = 0.8
+bowl = true
+effects = [{ id = "farmersdelight:nourishment", duration = 3600, amplifier = 0, chance = 1.0 }]
+
+[mashed_potatoes]
+source = "MDj/MoreDelight.java:174"
+nutrition = 12
+saturation_modifier = 0.8
+bowl = true
+
+[diced_potatoes_with_chicken_cuts]
+source = "MDj/MoreDelight.java:192"
+nutrition = 10
+saturation_modifier = 0.8
+bowl = true
+
+[diced_potatoes_with_beef]
+source = "MDj/MoreDelight.java:210"
+nutrition = 10
+saturation_modifier = 0.8
+bowl = true
+
+[diced_potatoes_with_porkchop]
+source = "MDj/MoreDelight.java:228"
+nutrition = 10
+saturation_modifier = 0.8
+bowl = true
+
+[diced_potatoes_with_egg_and_tomato]
+source = "MDj/MoreDelight.java:246"
+nutrition = 10
+saturation_modifier = 0.8
+bowl = true
+
+[potato_salad]
+source = "MDj/MoreDelight.java:265"
+nutrition = 6
+saturation_modifier = 0.6
+bowl = true
+effects = [{ id = "minecraft:regeneration", duration = 100, amplifier = 0, chance = 1.0 }]
+
+[chicken_salad]
+source = "MDj/MoreDelight.java:284"
+nutrition = 6
+saturation_modifier = 0.6
+bowl = true
+effects = [{ id = "minecraft:regeneration", duration = 100, amplifier = 0, chance = 1.0 }]
+
+[carrot_soup]
+source = "MDj/MoreDelight.java:301"
+nutrition = 12
+saturation_modifier = 0.8
+bowl = true
+effects = [{ id = "farmersdelight:nourishment", duration = 3600, amplifier = 0, chance = 1.0 }]
+
+[simple_hamburger]
+source = "MDj/MoreDelight.java:320"
+nutrition = 8
+saturation_modifier = 0.8
+
+[hamburger_with_egg]
+source = "MDj/MoreDelight.java:341"
+nutrition = 9
+saturation_modifier = 0.8
+
+[loaded_hamburger]
+source = "MDj/MoreDelight.java:354"
+nutrition = 13
+saturation_modifier = 0.8
+
+[chicken_sandwich_with_egg_and_tomato]
+source = "MDj/MoreDelight.java:371"
+nutrition = 11
+saturation_modifier = 0.8
+
+[steak_sandwich]
+source = "MDj/MoreDelight.java:385"
+nutrition = 10
+saturation_modifier = 0.8
+
+[porkchop_sandwich]
+source = "MDj/MoreDelight.java:398"
+nutrition = 10
+saturation_modifier = 0.8
+
+[egg_with_bacon_sandwich]
+source = "MDj/MoreDelight.java:411"
+nutrition = 11
+saturation_modifier = 0.8
+
+[tomato_sandwich]
+source = "MDj/MoreDelight.java:425"
+nutrition = 7
+saturation_modifier = 0.8
+
+[bread_slice]
+source = "MDj/MoreDelight.java:438"
+nutrition = 2
+saturation_modifier = 0.4
+
+[toast]
+source = "MDj/MoreDelight.java:444"
+nutrition = 3
+saturation_modifier = 0.4
+fast = true
+
+[toast_with_egg]
+source = "MDj/MoreDelight.java:451"
+nutrition = 5
+saturation_modifier = 0.6
+fast = true
+
+[toast_with_honey]
+source = "MDj/MoreDelight.java:464"
+nutrition = 5
+saturation_modifier = 0.6
+fast = true
+
+[toast_with_sweet_berries]
+source = "MDj/MoreDelight.java:477"
+nutrition = 5
+saturation_modifier = 0.6
+fast = true
+
+[toast_with_glow_berries]
+source = "MDj/MoreDelight.java:490"
+nutrition = 5
+saturation_modifier = 0.6
+fast = true
+
+[toast_with_chocolate]
+source = "MDj/MoreDelight.java:503"
+nutrition = 5
+saturation_modifier = 0.6
+fast = true
+

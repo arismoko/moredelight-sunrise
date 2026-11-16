@@ -1,0 +1,28 @@
+{
+  "template": "minecraft:stick",
+  "max_stack_size": 16,
+  "crafting_remainder": "minecraft:bowl",
+  "components": {
+    "minecraft:food": {
+      "nutrition": 14,
+      "saturation": 22.4
+    },
+    "minecraft:consumable": {
+      "on_consume_effects": [
+        {
+          "type": "minecraft:apply_effects",
+          "effects": [
+            {
+              "id": "farmersdelight:nourishment",
+              "duration": 3600,
+              "amplifier": 0
+            }
+          ]
+        }
+      ]
+    },
+    "minecraft:use_remainder": {
+      "id": "minecraft:bowl"
+    }
+  }
+}
