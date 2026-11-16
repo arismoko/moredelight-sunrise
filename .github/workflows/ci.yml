@@ -20,3 +20,4 @@ jobs:
           cmp NOTICE assets/moredelight/licenses/notice.txt
           cmp LICENSE assets/moredelight/licenses/port.txt
       - run: python3 tools/gen_md_decls.py --check
+      - run: python3 tools/test_lang_md.py --strict

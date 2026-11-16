@@ -207,3 +207,31 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - count: MD has 8 effect foods / 23 without (MoreDelight.java `withEffect` ×8); the plan's "7 / 24" was a miscount.
 - deltas: none.
 - next: MD-11 (advancements, lang, creative tab audit).
+
+## MD-11 Advancements, lang, creative tab audit — PASS — 2026-11-16
+- base: farmersdelight-horizon 2b4487d (package `3.6.30-horizon.2`) | addon commit: (this commit)
+- new: `tools/test_lang_md.py [--strict]` (core keys = `item.moredelight.<id>` for the 33 declared items + every
+  advancement title/description translate key = 51; en_us must have all; per-locale gaps listed; `--strict` fails on
+  any): 34 locales, 0 gaps. Added to CI with `--strict`.
+- in game (fd-port, FDM6; `../run/shots/md-11/`):
+  - all 41 advancements load: `advancement grant @s only moredelight:<id>` for each of the 41 files answers "already
+    have it", none unknown (`load41.log`; 9 main + 2 knife recipe unlocks + 30 recipe unlocks).
+  - scripted goal run (`goals-clean.log`, `announcements.log`): `advancement revoke @s from moredelight:main/root`
+    ("Revoked 9"), then one `/give` at a time, checked with `execute if entity @s[advancements={…=true}]`: wheat seeds
+    → root; toast with egg, omelette, egg with bacon sandwich, chicken sandwich with egg and tomato, diced potatoes
+    with beef, mashed potatoes, creamy pasta with ham, cooked rice with porkchop → exactly that goal each; a second
+    item of an OR goal grants nothing new; each of the 8 goals announced once in chat after the revoke. (The first
+    rice give fell out of a full inventory; repeated after freeing slots.)
+  - advancement screen: tab "More Delight", root icon chicken sandwich with egg and tomato, bricks background, all
+    goals done (`adv-md-tab.png`).
+  - languages (`lang-montage.png`): de_de "Gewürfelte Kartoffeln", zh_cn "切块土豆" for diced potatoes; the
+    advancement tab title "多趣乐事" in zh_cn and "More Delight" in de_de (de_de.json's own value). Language set back
+    to en_us.
+  - MA2: FD `main/craft_knife` is byte-identical to FD's file (MD ships nothing under `data/farmersdelight/`); revoked,
+    then an MD wooden knife given → not granted; an FD flint knife → granted (`ma2.log`).
+  - creative tab: unchanged since MD-04 (33 items in MD's order; `gen_md_decls.py --check`); its name tooltip on page
+    2 is covered by a vanilla tab name (base E-39, reproduced in game today: `../run/shots/e-39/`).
+- test-world notes: chest of MD test foods at 59994,200,59992; FDM6 test leftovers cleared from the inventory to make
+  room (19 porkchops, wheat seeds, MD goal items).
+- deltas: none new (MA2 as planned).
+- next: MD-12 (MDM3 demo, validation matrix, release).
