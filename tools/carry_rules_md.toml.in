@@ -10,7 +10,7 @@ roots = ["src/main/generated", "src/main/resources"]
 
 # The base checkout the carry imports carry_lib.py from and checks tags against (ported_farmersdelight).
 [base]
-sha = "356d9eff643a638a39b13e720f0aecd483432a29"
+sha = "c2ac486e07ef555e72d6c884fde4b637a03ee0f2"
 
 # R1: copied byte for byte.
 [copy]

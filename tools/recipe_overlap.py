@@ -102,6 +102,8 @@ class World:
                 return frozenset(["ability:" + node["action"]])
             if kind == "fabric:any":
                 return frozenset().union(*(self.ingredient(n) for n in node["ingredients"]))
+            if kind == "neoforge:compound":
+                return frozenset().union(*(self.ingredient(n) for n in node["children"]))
             if "item" in node:
                 return frozenset([node["item"]])
             if "tag" in node:
@@ -223,7 +225,8 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--base", type=Path, required=True)
     ap.add_argument("--vanilla", type=Path, required=True)
-    ap.add_argument("--addon", type=Path, default=Path(__file__).resolve().parent.parent)
+    ap.add_argument("--addon", type=Path, action="append",
+                    help="an add-on checkout (repeatable; default: this repository)")
     ap.add_argument("--json", action="store_true")
     args = ap.parse_args(argv)
 
@@ -232,7 +235,9 @@ def main(argv=None) -> int:
     w.add("base", tree_files(args.base))
     for ov in sorted((args.base / "tools/addon_overlays").glob("*.json")):
         w.add_overlay(ov)
-    w.add("addon", tree_files(args.addon))
+    addons = args.addon or [Path(__file__).resolve().parent.parent]
+    for i, a in enumerate(addons):
+        w.add("addon" if len(addons) == 1 else f"addon:{a.resolve().name}", tree_files(a))
 
     entries, skipped = [], []
     for rid, (source, doc) in sorted(w.recipes.items()):
@@ -254,13 +259,13 @@ def main(argv=None) -> int:
             for b in group[i + 1:]:
                 if not overlaps(a, b):
                     continue
-                if "addon" in (a.source, b.source):
+                if a.source.startswith("addon") or b.source.startswith("addon"):
                     addon_hits.append((a, b))
                 else:
                     base_pairs.append((a.id, b.id))
     base_hits = len(base_pairs)
 
-    addon_recipes = [e for e in entries if e.source == "addon"]
+    addon_recipes = [e for e in entries if e.source.startswith("addon")]
     conflicts = [(a, b) for a, b in addon_hits if a.result != b.result]
     report = {
         "recipes": len(entries),
@@ -280,7 +285,7 @@ def main(argv=None) -> int:
     else:
         print(f"recipes {report['recipes']} (addon {report['addon_recipes']}); "
               f"skipped {len(skipped)} with unknown ingredient forms "
-              f"({sum(1 for s in skipped if s[1] == 'addon')} from the addon)")
+              f"({sum(1 for s in skipped if s[1].startswith('addon'))} from the addon)")
         print(f"base-only overlapping pairs: {base_hits} (reference behaviour, not judged)")
         for o in report["addon_overlaps"]:
             tag = "same result" if o["same_result"] else "CONFLICT"

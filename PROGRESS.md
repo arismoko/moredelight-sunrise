@@ -268,3 +268,28 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - deltas: none new (MA1, MA2 as planned). Engine observations used: E-39, E-40.
 - next: BX-04 (base PROGRESS; user set the scope to all of Corn Delight on 2026-11-16), then BX-05, BX-06, BX-09,
   CD-01…CD-18 (`corndelight-horizon/PROGRESS.md`).
+
+## CD-18 (MD side) Re-validation on base 3.6.30-horizon.3; release 26.9.16-horizon.2 — PASS (LAN: ENVIRONMENT-BLOCKED) — 2026-11-17
+- base: farmersdelight-horizon c2ac486 (tag `v3.6.30-horizon.3`) | addon commit: (this commit), tag
+  `v26.9.16-horizon.2` | build pin afe471cf
+- why: the base gained BX-04/05/06/09 and the CD-06/CD-11 API (AD13: any base release ⇒ MD `-horizon.N+1`).
+- release: `horizon-mod.toml` version `26.9.16-horizon.2`, pin `ported_farmersdelight = "=3.6.30-horizon.3"`; README
+  names base c2ac486. Carry re-pinned to c2ac486 (`tools/carry_rules_md.toml.in`): 225 carried files identical.
+  `tools/recipe_overlap.py`: repeatable `--addon` and `neoforge:compound` ingredients (for CD's data).
+  Package `../dist/ported_moredelight-26.9.16-horizon.2.hmod` (139903 bytes, SHA-256 5ae75940…786e;
+  `cargo horizon-mod check` clean; every packaged file identical to this commit's tree).
+- checks: carry --check 225, gen_md_decls --check 34, test_lang_md --strict 0 gaps, 4 tools/test_*.py; recipe report
+  over base + MD + CD: 1749 recipes, 0 add-on conflicts.
+- ADDONS_VALIDATION §4, More Delight rows against base `.3` (evidence `../run/shots/cd-18/`):
+
+  | Row | Result | Evidence |
+  |---|---|---|
+  | V2 base + MD | PASS | §3.1 in `CDV8` (base `.3` + MD `.2` + CD, release build): stone knife crafted (cobblestone over stick), potato → diced potatoes and bread → 4 bread slices on the FD board (durability −1 per cut), a potato on the board kept across a full restart (`v2-md-board-*.png`), bread slice → toast in a furnace; log errors only the 3 known M0 crate-condition lines (`v2-md-on-base3.log`) |
+  | V4 base + MD + CD | PASS (server) | corndelight-horizon PROGRESS CD-18 (tabs, stone knife cuts corn, recipe report, dedicated server with both add-ons) |
+  | V5 base absent | PASS | MD `.2` alone: "ported_moredelight requires missing mod ported_farmersdelight", startup refused (`v5-md2-nobase.log`) |
+  | V6 wrong base version | PASS | MD `.1` with base `.3`: "ported_moredelight requires ported_farmersdelight =3.6.30-horizon.2, but installed version is 3.6.30-horizon.3", startup refused (`v6-md1-base3.log`) |
+  | V8 MD added to a base-only world | PASS | `CDV8` created base-only, reopened with MD + CD: "content from 3 mod(s)", MD items obtainable |
+  | V10 multiplayer | PASS (dedicated server) / LAN ENVIRONMENT-BLOCKED | server + Alice + Bob with MD `.2` (sha checked); Bob cut corn with the MD stone knife on a board; LAN: offline developer session refuses `lan open` |
+  | V1, V7, V9, V11 | unchanged | no MD-relevant base change (MD-12 rows stand); tooltip code unchanged in `.3` |
+- deltas: none new.
+- next: none in the current scope (Corn Delight complete; report to the user).

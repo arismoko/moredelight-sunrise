@@ -5,8 +5,8 @@ add-on for Farmer's Delight: wooden and stone knives, 31 foods (rice and pasta m
 salads, carrot soup, hamburgers, sandwiches, bread slices and toasts), their cooking-pot, cutting-board, crafting and
 furnace recipes, advancements and 34 translations.
 
-Version `26.9.16-horizon.1`, for the Farmer's Delight Horizon port `3.6.30-horizon.2` exactly (validated with its
-commit `9ee9593`, tag `v3.6.30-horizon.2`).
+Version `26.9.16-horizon.2`, for the Farmer's Delight Horizon port `3.6.30-horizon.3` exactly (validated with its
+commit `c2ac486`, tag `v3.6.30-horizon.3`).
 
 ## Install
 
