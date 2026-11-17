@@ -293,3 +293,17 @@ base (`ported_farmersdelight`) commit and version it was validated with.
   | V1, V7, V9, V11 | unchanged | no MD-relevant base change (MD-12 rows stand); tooltip code unchanged in `.3` |
 - deltas: none new.
 - next: none in the current scope (Corn Delight complete; report to the user).
+
+## RT-03 Retarget to Sunrise 2d81263 — PASS (smoke; full re-validation NOT RUN) — 2026-11-17
+- build pin: sunrise@2d8126336e579777eabf9b2fd8b3d476236a04f2 | base commit: f267df5 (3.6.30-sunrise.1) | mod commits:
+  de88711 + this | version 26.9.16-sunrise.1 (not tagged/released yet). `main` converted in place (user's choice).
+- did: `sunrise-mod.toml` (dependency `=3.6.30-sunrise.1`), declarations under `data/moredelight/sunrise/` via
+  `tools/target.toml.in`; carry re-pinned to the base commit; README for Sunrise. `cargo sunrise-mod build` →
+  `target/sunrise-mod/ported_moredelight.smod`, `check`: content only. Sunrise turns content mods off until
+  `mod.ported_moredelight:true` is in `sunrise-mods.txt`.
+- in game (base PROGRESS RT-03): "content from 3 mod(s)", 0 errors; `give moredelight:stone_knife` and
+  `recipe give moredelight:stone_knife` work.
+- not run: ADDONS_VALIDATION §4 rows on Sunrise (knife cutting, foods, restart, multiplayer).
+- checks: carry 225, decl 34; 4 tools tests.
+- deltas: none new.
+- next: re-validation on Sunrise, then release 26.9.16-sunrise.1 with the base.

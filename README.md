@@ -1,23 +1,23 @@
-# More Delight — Horizon port
+# More Delight — Sunrise port
 
-A content-only [Horizon](https://github.com/arismoko/horizon) mod porting More Delight 26.09.16 (Minecraft 26.3), an
+A content-only [Sunrise](https://github.com/sunrise-org/sunrise) mod porting More Delight 26.09.16 (Minecraft 26.3), an
 add-on for Farmer's Delight: wooden and stone knives, 31 foods (rice and pasta meals, mashed and diced potatoes,
 salads, carrot soup, hamburgers, sandwiches, bread slices and toasts), their cooking-pot, cutting-board, crafting and
 furnace recipes, advancements and 34 translations.
 
-Version `26.9.16-horizon.2`, for the Farmer's Delight Horizon port `3.6.30-horizon.3` exactly (validated with its
-commit `c2ac486`, tag `v3.6.30-horizon.3`).
+Version `26.9.16-sunrise.1`, for the Farmer's Delight Sunrise port `3.6.30-sunrise.1` exactly (checked with its
+commit `1763062` on Sunrise `2d81263`). (`26.9.16-horizon.2`, tag `v26.9.16-horizon.2`, was the Horizon build.)
 
 ## Install
 
-1. Install the Farmer's Delight Horizon port (`ported_farmersdelight`) first; this mod refuses to load without it,
+1. Install the Farmer's Delight Sunrise port (`ported_farmersdelight`) first; this mod refuses to load without it,
    or with another version of it.
-2. Copy `ported_moredelight.hmod` into the instance's `horizon-mods/` folder and turn it on with a line
-   `mod.ported_moredelight:true` in `horizon-mods.txt` beside `options.txt`.
+2. Copy `ported_moredelight.smod` into the instance's `sunrise-mods/` folder and turn it on with a line
+   `mod.ported_moredelight:true` in `sunrise-mods.txt` beside `options.txt`.
 
-**Multiplayer:** every player needs the Horizon client with the same Farmer's Delight port and this mod.
+**Multiplayer:** every player needs the Sunrise client with the same Farmer's Delight port and this mod.
 
-**Removing the mod from a world:** Horizon gives no warning (content-only mods are not recorded in the save, engine
+**Removing the mod from a world** (observed on Horizon; not yet re-checked on Sunrise): the game gives no warning (content-only mods are not recorded in the save, engine
 observation E-40). More Delight items read as empty stacks while the mod is off; if the world is saved and the mod
 is turned back on, they come back.
 
@@ -51,8 +51,8 @@ client jar (read as a zip) for the tag check:
 ```sh
 python3 tools/carry_md.py --md <MoreDelight> --base <farmersdelight-horizon> --vanilla <client.jar> --check
 FD_BASE=<farmersdelight-horizon> python3 tools/test_carry_md.py
-cargo horizon-mod build      # target/horizon-mod/ported_moredelight.hmod
-cargo horizon-mod check target/horizon-mod/ported_moredelight.hmod
+cargo sunrise-mod build      # target/sunrise-mod/ported_moredelight.smod
+cargo sunrise-mod check target/sunrise-mod/ported_moredelight.smod
 ```
 
 ## Credits and licence
