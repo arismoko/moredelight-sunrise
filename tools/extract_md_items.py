@@ -81,10 +81,10 @@ def parse(text: str) -> list[dict]:
 
 def to_toml(items: list[dict], java_rel: str) -> str:
     out = [
-        "# (Named *.toml.in: the Horizon packager refuses .toml files outside src/.)",
+        "# (Named *.toml.in: the packager refuses .toml files outside src/.)",
         "# More Delight's 33 items as DelightLib builds them (MD-03). Rows in registration order (= creative tab order).",
         "# Values are checked against MoreDelight.java by tools/test_md_decls.py; tools/gen_md_decls.py writes",
-        "# data/moredelight/horizon/item/*.json and creative_tab/tab.json. `source` cites the Java line.",
+        "# data/moredelight/<decl_dir>/item/*.json and creative_tab/tab.json. `source` cites the Java line.",
         "",
     ]
     for it in items:

@@ -1,4 +1,4 @@
-# (Named *.toml.in: the Horizon packager refuses .toml files outside src/.)
+# (Named *.toml.in: the packager refuses .toml files outside src/.)
 # Rules for tools/carry_md.py (ADDONS_PLAN §5.4, MD-02). Change these and re-run; never hand-edit carried files.
 
 [source]
@@ -10,7 +10,7 @@ roots = ["src/main/generated", "src/main/resources"]
 
 # The base checkout the carry imports carry_lib.py from and checks tags against (ported_farmersdelight).
 [base]
-sha = "c2ac486e07ef555e72d6c884fde4b637a03ee0f2"
+sha = "e2063cbdd0a1a72704f2f1ab9b69282d0c7472c1"
 
 # R1: copied byte for byte.
 [copy]

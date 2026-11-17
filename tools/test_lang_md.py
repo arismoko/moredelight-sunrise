@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """MD-11: lang key audit for More Delight.
 
-Core keys: `item.moredelight.<id>` for every declared item (`data/moredelight/horizon/item/*.json`) and every
+Core keys: `item.moredelight.<id>` for every declared item (`data/moredelight/sunrise/item/*.json`) and every
 translate key in the carried advancements (title and description). en_us.json must have them all (exit 1
 otherwise); every locale file must be valid JSON. Prints, per locale, the core keys it lacks (the game then shows
 en_us's text, as on Fabric), and `--strict` also fails on those.
@@ -26,7 +26,7 @@ def translate_keys(node, out: set) -> None:
 
 
 def core_keys() -> set:
-    keys = {f"item.moredelight.{p.stem}" for p in (ROOT / "data/moredelight/horizon/item").glob("*.json")}
+    keys = {f"item.moredelight.{p.stem}" for p in (ROOT / "data/moredelight/sunrise/item").glob("*.json")}
     for p in (ROOT / "data/moredelight/advancement").rglob("*.json"):
         display = json.loads(p.read_text("utf-8")).get("display")
         if display:

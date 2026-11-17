@@ -1,0 +1,12 @@
+# (Named *.toml.in: the packager refuses .toml files outside src/.)
+# Engine target (RETARGET_PLAN D13). Generators and the carry read this; switching target = edit these values,
+# re-run tools/gen_md_decls.py; keep it equal to the base's. Rename the
+# manifest and change the Cargo path (RETARGET_PLAN §12).
+engine = "sunrise"
+manifest = "sunrise-mod.toml"
+decl_dir = "sunrise"
+data_key_ns = "sunrise"
+entry_attr = "sunrise_mod"
+part_attr = "sunrise_part"
+api_crate = "sunrise-mod-api"
+sdk_dir = ".sunrise/sdk/api"

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate More Delight's Horizon item declarations and creative tab from tools/decl/md_items.toml.in (MD-03).
+"""Generate More Delight's engine item declarations and creative tab from tools/decl/md_items.toml.in (MD-03).
 
 Knives are FD's `ModItems.knifeItem(material)` (the base port's knife declarations: attack damage 0.5 + material
 bonus, attack speed −2.0 (MQ1: DelightLib's own values are never passed), tool rules incorrect-for-material / FD
@@ -21,9 +21,12 @@ import sys
 import tomllib
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import target  # noqa: E402
+
 REPO = Path(__file__).resolve().parent.parent
 TABLE = REPO / "tools" / "decl" / "md_items.toml.in"
-OUT = REPO / "data" / "moredelight" / "horizon"
+OUT = REPO / "data" / "moredelight" / target.DECL_DIR
 NS = "moredelight"
 
 # Vanilla 26.3 ToolMaterial.WOOD / STONE (durability, speed, attack bonus, enchantability, repair tag, incorrect tag).
