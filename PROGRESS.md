@@ -307,3 +307,21 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - checks: carry 225, decl 34; 4 tools tests.
 - deltas: none new.
 - next: re-validation on Sunrise, then release 26.9.16-sunrise.1 with the base.
+
+## RT-04 Sunrise re-validation and release 26.9.16-sunrise.1 — PASS (LAN: ENVIRONMENT-BLOCKED) — 2026-11-18
+- build pin: sunrise@2d8126336e579777eabf9b2fd8b3d476236a04f2 | base commit: 8911db2 (`3.6.30-sunrise.1`, tag
+  `v3.6.30-sunrise.1`) | mod commit: (this commit), tag `v26.9.16-sunrise.1`. Carry re-pinned to 8911db2: 225
+  files byte-identical, only the manifest's pin changed.
+- package: `../dist/ported_moredelight-26.9.16-sunrise.1.smod` (139901 B, SHA-256 8b208f89…; every file
+  byte-identical to this tree); `cargo sunrise-mod check`: "the package rules hold".
+- ADDONS_VALIDATION §3.1 / §4 on Sunrise (`../run/shots/RT-04/`, corn rows in CD's RT-04 entry):
+  - §3.1: stone knife on an FD board: potato → 1 diced potatoes, bread → 4 bread slices, 1 durability per cut
+    (131 → 129); a potato left on the board kept through two restarts, rendered, returned by an empty hand in
+    survival; MD carrot soup mid-cook (231/400) finished after the reload (bowl used, `RecipesUsed`).
+  - V2/V4 PASS (single player, dedicated server: Bob's stone knife cut a potato and CD corn), release packages
+    in a fresh instance (CD entry). V5 PASS: MD on a server without the base → "mod load refused:
+    ported_moredelight requires missing mod ported_farmersdelight". V10 PASS on the dedicated server, LAN
+    ENVIRONMENT-BLOCKED. V7/V8/V11 carried from CD-18 (content unchanged since).
+- checks: carry 225, decl 34, lang --strict 0 gaps, 4 tools/test_*.py.
+- deltas: none new.
+- next: none in the retarget scope.
