@@ -5,14 +5,17 @@ add-on for Farmer's Delight: wooden and stone knives, 31 foods (rice and pasta m
 salads, carrot soup, hamburgers, sandwiches, bread slices and toasts), their cooking-pot, cutting-board, crafting and
 furnace recipes, advancements and 34 translations.
 
-Version `26.9.16-sunrise.1`, for the Farmer's Delight Sunrise port `3.6.30-sunrise.1` exactly (checked with its
-commit `1763062` on Sunrise `2d81263`). (`26.9.16-horizon.2`, tag `v26.9.16-horizon.2`, was the Horizon build.)
+Version `26.9.16-sunrise.1`, for the [Farmer's Delight Sunrise port](https://github.com/play-go/farmersdelight-horizon) `3.6.30-sunrise.1` exactly (checked with
+its commit `8911db2` on Sunrise `2d81263`). (`26.9.16-horizon.2`, tag `v26.9.16-horizon.2`, was the Horizon build.)
+
+**Download:** [Releases](https://github.com/play-go/moredelight-horizon/releases) (`ported_moredelight-<version>.smod` with its SHA-256). Works alongside
+[Corn Delight](https://github.com/play-go/corndelight-horizon).
 
 ## Install
 
-1. Install the Farmer's Delight Sunrise port (`ported_farmersdelight`) first; this mod refuses to load without it,
-   or with another version of it.
-2. Copy `ported_moredelight.smod` into the instance's `sunrise-mods/` folder and turn it on with a line
+1. Install the [Farmer's Delight Sunrise port](https://github.com/play-go/farmersdelight-horizon) (`ported_farmersdelight`) first; this mod refuses to load
+   without it, or with another version of it.
+2. Copy `ported_moredelight-<version>.smod` into the instance's `sunrise-mods/` folder and turn it on with a line
    `mod.ported_moredelight:true` in `sunrise-mods.txt` beside `options.txt`.
 
 **Multiplayer:** every player needs the Sunrise client with the same Farmer's Delight port and this mod.

@@ -1,4 +1,4 @@
-More Delight (Horizon port)
+More Delight (Sunrise port)
 ===========================
 
 This port's own files (tools, declarations, documentation) are MIT licensed (see LICENSE).
@@ -18,7 +18,7 @@ Axperty), read as a reference; nothing from it is shipped.
 
 Farmer's Delight
 ----------------
-This add-on needs the Farmer's Delight Horizon port (ported_farmersdelight),
+This add-on needs the Farmer's Delight Sunrise port (ported_farmersdelight),
 which carries Farmer's Delight Refabricated under MIT (see that mod's NOTICE).
 
 No vanilla Minecraft assets are extracted or redistributed.
