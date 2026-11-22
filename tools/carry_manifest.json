@@ -1,8 +1,8 @@
 {
  "md_repo": "https://github.com/axperty/moredelight",
  "md_sha": "360e61172756e8b22d4d647753321002c7452d35",
- "base_sha": "8911db20117aaa23f8ccbda485048b17bf2a728d",
- "rules_sha256": "45919787a138befa7a30d8634853aba77d5b4cf6af2184b83c2aaf26f082bb84",
+ "base_sha": "995877fc8d9512cedfdefc6f7468d69a8780bc3b",
+ "rules_sha256": "9083c10e57de37a5b4c16b360221d622e6d2af0ab3132fac773e327956d1b463",
  "overlay_sha256": "3d639855211ba8de5ec35f837df9a8f9457133166c2837d7ff9f204ad4e90e70",
  "log": [
   "dropped data/farmersdelight/advancement/main/craft_knife.json (MA2)",

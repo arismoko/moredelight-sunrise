@@ -325,3 +325,17 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - checks: carry 225, decl 34, lang --strict 0 gaps, 4 tools/test_*.py.
 - deltas: none new.
 - next: none in the retarget scope.
+
+## RT-09 MD on Sunrise Nightly 9425651 — PASS (LAN: NOT RUN) — 2026-11-22
+- build pin: sunrise@94256510f74e6843754e0a93fd9e4da7e45b1056 (content mod: no pin of its own) | branch `nightly` |
+  base commit: 995877f (`nightly`) | mod commit: (this commit).
+- carry re-pinned to 995877f: 225 files byte-identical, only the manifest's pin changed; carry --check 225, decl 34,
+  lang 0 gaps, 4 tools/test_*.py.
+- in game (Nightly rig; the `26.9.16-sunrise.1` `.smod`, content unchanged): "content from 3 mod(s)", 0 ERROR.
+  §3.1: stone knife on an FD board: potato → 1 diced potatoes, bread → 4 bread slices, 131 → 129 (1 per cut);
+  MD carrot soup (milk bucket + 2 carrots, 400 ticks) on a lit stove → soup in the output, bowl used.
+  V4/V10: RT-08's dedicated server (MD stone knife cut CD corn for Bob). V5: without the base (RT-07, launcher's
+  plain base) → "mod load refused: ported_moredelight requires missing mod ported_farmersdelight".
+- not done here: dependency bump to the base's next version (RT-11).
+- deltas: none new.
+- next: RT-11 (release with the base).
