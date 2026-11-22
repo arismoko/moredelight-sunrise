@@ -339,3 +339,17 @@ base (`ported_farmersdelight`) commit and version it was validated with.
 - not done here: dependency bump to the base's next version (RT-11).
 - deltas: none new.
 - next: RT-11 (release with the base).
+
+## RT-11 Release 26.9.16-sunrise.2 (for FD 3.6.30-sunrise.2, Sunrise Nightly 9425651) — PASS — 2026-11-22
+- base: `3.6.30-sunrise.2`, tag `v3.6.30-sunrise.2` (c1a1e58) | mod commit: (this commit), tag `v26.9.16-sunrise.2`.
+- changes: version and exact dependency `=3.6.30-sunrise.2`; README; carry re-pinned to c1a1e58 (225 files
+  byte-identical, only the pin changed). Content unchanged since `.1`.
+- checks: carry --check 225, decl 34, lang 0 gaps, 4 tools/test_*.py; `cargo sunrise-mod check` of the package:
+  "requires ported_farmersdelight =3.6.30-sunrise.2", "no code: content only".
+- package: `../dist/ported_moredelight-26.9.16-sunrise.2.smod`, 139901 bytes, SHA-256 `b048bb81…6eb60c`; every file
+  byte-identical to the tree.
+- in game: RT-09 rows on the same content; release packages together (base RT-11): "content from 2 mod(s)", 0 ERROR,
+  stone knife cuts a potato on an FD board in a fresh world.
+- note: the carry pin is the base's release commit c1a1e58, not the base's later log commit; check against the tag.
+- deltas: none new.
+- next: registry (#6 gets the `.2` version).

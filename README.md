@@ -5,8 +5,9 @@ add-on for Farmer's Delight: wooden and stone knives, 31 foods (rice and pasta m
 salads, carrot soup, hamburgers, sandwiches, bread slices and toasts), their cooking-pot, cutting-board, crafting and
 furnace recipes, advancements and 34 translations.
 
-Version `26.9.16-sunrise.1`, for the [Farmer's Delight Sunrise port](https://github.com/play-go/farmersdelight-sunrise) `3.6.30-sunrise.1` exactly (checked with
-its commit `8911db2` on Sunrise `2d81263`). (`26.9.16-horizon.2`, tag `v26.9.16-horizon.2`, was the Horizon build.)
+Version `26.9.16-sunrise.2`, for the [Farmer's Delight Sunrise port](https://github.com/play-go/farmersdelight-sunrise) `3.6.30-sunrise.2` exactly (checked with
+its commit `c1a1e58` on the Sunrise Nightly `9425651`). `26.9.16-sunrise.1` is for FD `3.6.30-sunrise.1` on Sunrise `2d81263`;
+(`26.9.16-horizon.2`, tag `v26.9.16-horizon.2`, was the Horizon build.)
 
 **Download:** [Releases](https://github.com/play-go/moredelight-sunrise/releases) (`ported_moredelight-<version>.smod` with its SHA-256). Works alongside
 [Corn Delight](https://github.com/play-go/corndelight-sunrise).
